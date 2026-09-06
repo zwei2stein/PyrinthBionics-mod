@@ -5,9 +5,19 @@ Steam workshop link: <https://steamcommunity.com/sharedfiles/filedetails/?id=TOD
 
 ## Quick about
 
+### Infographic
+
+[Infographics as separate page](/Publishing/features.html)
+
+![](/Publishing/features_implants.png)
+
+![](/Publishing/features_consumables.png)
+
+### Steam mod page info
+
 [Steam blurb text is in this repo](/Publishing/steam.txt)
 
-
+![](/Publishing/tech.png)
 
 ## License
 

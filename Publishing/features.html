@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pyrinth Bionics - Features</title>
+    <style>
+        :root {
+            --rimworld-bg-dark: #1b2838;
+            --rimworld-bg-darker: #111827;
+            --rimworld-bg-panel: #243447;
+            --rimworld-bg-panel-light: #2a3e50;
+            --rimworld-text: #d4d4d4;
+            --rimworld-text-muted: #9a9a9a;
+            --rimworld-text-bright: #ffffff;
+            --rimworld-accent-gold: #c0774d;
+            --rimworld-accent-blue: #4a90d9;
+            --spacing-xs: 4px;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+            --radius-sm: 4px;
+            --radius-md: 8px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--rimworld-bg-darker);
+            color: var(--rimworld-text);
+            line-height: 1.6;
+            padding: var(--spacing-lg);
+        }
+
+        .feature-table {
+            width: 950px;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: var(--rimworld-bg-panel);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 1em;
+            margin-top: 1em;
+        }
+
+        .feature-table tr { border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .feature-table tr:last-child { border-bottom: none; }
+        .feature-table tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+
+        .feature-table th {
+            padding: var(--spacing-md) var(--spacing-lg);
+            text-align: left;
+            font-size: 0.9em;
+            color: var(--rimworld-accent-gold);
+            font-weight: 600;
+            background: rgba(0,0,0,0.2);
+            border-bottom: 2px solid rgba(255,255,255,0.1);
+        }
+
+        .cell-graphic {
+            width: 100px;
+            padding: var(--spacing-md);
+            text-align: center;
+            vertical-align: middle;
+            background: rgba(0,0,0,0.1);
+        }
+
+        .cell-graphic img {
+            max-width: 80px;
+            max-height: 80px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 8px rgba(192, 117, 77, 0.5));
+        }
+
+        .cell-description {
+            padding: var(--spacing-md) var(--spacing-lg);
+            vertical-align: middle;
+            width: 38%;
+        }
+
+        .cell-description h3 {
+            font-size: 1.1em;
+            color: rgb(192,117,77);
+            margin-bottom: var(--spacing-xs);
+            font-weight: 600;
+            filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.5));
+        }
+
+        .cell-description p {
+            font-size: 0.9em;
+            color: var(--rimworld-text-muted);
+            line-height: 1.5;
+        }
+
+        .cell-cost {
+            width: 22%;
+            padding: var(--spacing-md) var(--spacing-lg);
+            vertical-align: middle;
+        }
+
+        .cost-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .cost-table td {
+            padding: 2px 4px;
+            text-align: center;
+            font-size: 0.85em;
+        }
+
+        .cost-table .amount {
+            color: var(--rimworld-text-bright);
+            font-weight: 600;
+            width: 25%;
+        }
+
+        .cost-table .material {
+            color: var(--rimworld-text);
+            text-align: left;
+            width: 50%;
+        }
+
+        .cost-table .icon {
+            width: 25%;
+        }
+
+        .cost-table .icon img {
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+            vertical-align: middle;
+        }
+
+        .cost-skill {
+            margin-top: var(--spacing-xs);
+            font-size: 0.85em;
+            color: var(--rimworld-text-muted);
+            font-style: italic;
+        }
+
+        .cell-stats {
+            width: 28%;
+            padding: var(--spacing-md) var(--spacing-lg);
+            vertical-align: middle;
+        }
+
+        .stats-list {
+            list-style: none;
+            font-size: 0.85em;
+        }
+
+        .stats-list li {
+            padding: var(--spacing-xs) 0;
+            position: relative;
+            padding-left: var(--spacing-md);
+            color: var(--rimworld-text-muted);
+        }
+
+        .stats-list li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            color: var(--rimworld-accent-gold);
+            font-size: 0.8em;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            margin: 2px 0;
+            border-radius: var(--radius-sm);
+            font-size: 0.75em;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tag-research {
+            background: rgba(208, 119, 77, 0.15);
+            border: 1px solid var(--rimworld-accent-gold);
+            color: var(--rimworld-accent-gold);
+        }
+
+        .tag-dlc {
+            background: rgba(74, 144, 217, 0.2);
+            border: 1px solid var(--rimworld-accent-blue);
+            color: var(--rimworld-accent-blue);
+        }
+        
+        .spoiler {
+            background: black;
+            color: black;
+        }
+        
+        .pyrinthheat {
+            color: rgb(192,117,77);
+            filter: drop-shadow(0 0 4px rgba(192,117,77, 0.5));
+        }
+    </style>
+</head>
+<body>
+<table class="feature-table">
+    <thead>
+    <tr>
+        <th></th>
+        <th>Description</th>
+        <th>Cost</th>
+        <th>Features & Stats</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- IMPLANT: PYRINTH EYE -->
+    <tr>
+        <td class="cell-graphic">
+            <img src="../Mod/1.6/Textures/UI/Abilities/PyrinthBionics/PyrinthSeduction.png" alt="Pyrinth Eye">
+        </td>
+        <td class="cell-description">
+            <h3>Pyrinth Eye</h3>
+            <p>Beautiful eye powered by hypnotic <strong>Pyrinth</strong> crystals. <strong>Grants social advantages and the ability to seduce pawns, influencing prisoners and slaves.</strong></p>
+            <div><span class="tag tag-research">Requires: Pyrinth bionics, Bionic replacements</span></div>
+        </td>
+        <td class="cell-cost">
+            <table class="cost-table">
+                <tr><td class="amount">15</td><td class="material">Plasteel</td><td class="icon"><img src="textures/Plasteel_c.png" alt="Plasteel"></td></tr>
+                <tr><td class="amount">4</td><td class="material">Advanced Component</td><td class="icon"><img src="textures/Advanced_component.png" alt="Advanced Component"></td></tr>
+                <tr><td class="amount">50</td><td class="material">Pyrinth</td><td class="icon"><img src="textures/Pyrinth_a.png" alt="Pyrinth"></td></tr>
+            </table>
+            <div class="cost-skill">Crafting 6</div>
+        </td>
+        <td class="cell-stats">
+            <ul class="stats-list">
+                <li>+1 <strong>PawnBeauty</strong></li>
+                <li>+15% <strong>SocialImpact</strong></li>
+                <li><strong>Comfy Temperature</strong>: -3°C to -6°C</li>
+                <li><strong><span class="pyrinthheat">Pyrinth Heat</span> Capacity</strong>: +5</li>
+                <li><strong><span class="pyrinthheat">Pyrinth Heat</span> Generation</strong>: +0.1/s</li>
+                <li><strong>Ability</strong>: Pyrinth Seduction (<strong><span class="pyrinthheat">Pyrinth Heat</span> Cost</strong>: 50)</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!-- IMPLANT: PYRINTH ARM -->
+    <tr>
+        <td class="cell-graphic">
+            <img src="../Mod/1.6/Textures/UI/Abilities/PyrinthBionics/CauterizeWounds.png" alt="Pyrinth Arm">
+        </td>
+        <td class="cell-description">
+            <h3>Pyrinth Arm</h3>
+            <p>Bionic arm powered by <strong>Pyrinth</strong> crystals. <strong>Unleashes stored heat to cauterize bleeding wounds, turning them into burns.</strong></p>
+            <div><span class="tag tag-research">Requires: Pyrinth bionics, Bionic replacements</span></div>
+        </td>
+        <td class="cell-cost">
+            <table class="cost-table">
+                <tr><td class="amount">15</td><td class="material">Plasteel</td><td class="icon"><img src="textures/Plasteel_c.png" alt="Plasteel"></td></tr>
+                <tr><td class="amount">4</td><td class="material">Advanced Component</td><td class="icon"><img src="textures/Advanced_component.png" alt="Advanced Component"></td></tr>
+                <tr><td class="amount">50</td><td class="material">Pyrinth</td><td class="icon"><img src="textures/Pyrinth_a.png" alt="Pyrinth"></td></tr>
+            </table>
+            <div class="cost-skill">Crafting 8</div>
+        </td>
+        <td class="cell-stats">
+            <ul class="stats-list">
+                <li><strong>Comfy Temperature</strong>: -5°C to -10°C</li>
+                <li><strong><span class="pyrinthheat">Pyrinth Heat</span> Capacity</strong>: +10</li>
+                <li><strong><span class="pyrinthheat">Pyrinth Heat</span> Generation</strong>: +0.5/s</li>
+                <li><strong>Ability</strong>: Cauterize Bleeding Wounds (<strong><span class="pyrinthheat">Pyrinth Heat</span> Cost</strong>: 50)</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!-- IMPLANT: PYRINTH LEG -->
+    <tr>
+        <td class="cell-graphic">
+            <img src="../Mod/1.6/Textures/UI/Abilities/PyrinthBionics/SteamJump.png" alt="Pyrinth Leg">
+        </td>
+        <td class="cell-description">
+            <h3>Pyrinth Leg</h3>
+            <p>Bionic leg powered by <strong>Pyrinth</strong> crystals. <strong>Uses stored heat to superheat water, creating a jet for powerful jumps.</strong></p>
+            <div><span class="tag tag-research">Requires: Pyrinth bionics, Bionic replacements</span></div>
+        </td>
+        <td class="cell-cost">
+            <table class="cost-table">
+                <tr><td class="amount">15</td><td class="material">Plasteel</td><td class="icon"><img src="textures/Plasteel_c.png" alt="Plasteel"></td></tr>
+                <tr><td class="amount">4</td><td class="material">Advanced Component</td><td class="icon"><img src="textures/Advanced_component.png" alt="Advanced Component"></td></tr>
+                <tr><td class="amount">50</td><td class="material">Pyrinth</td><td class="icon"><img src="textures/Pyrinth_a.png" alt="Pyrinth"></td></tr>
+            </table>
+            <div class="cost-skill">Crafting 8</div>
+        </td>
+        <td class="cell-stats">
+            <ul class="stats-list">
+                <li><strong>Comfy Temperature</strong>: -5°C to -10°C</li>
+                <li><strong><span class="pyrinthheat">Pyrinth Heat</span> Capacity</strong>: +10</li>
+                <li><strong><span class="pyrinthheat">Pyrinth Heat</span> Generation</strong>: +0.5/s</li>
+                <li><strong>Ability</strong>: Steam Jump (range: 20 tiles, <strong><span class="pyrinthheat">Pyrinth Heat</span> Cost</strong>: 50)</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!-- IMPLANT: PYRINTH LIVER -->
+    <tr>
+        <td class="cell-graphic">
+            <img src="../Mod/1.6/Textures/UI/Abilities/PyrinthBionics/PyrinthLiverPurge.png" alt="Pyrinth Liver">
+        </td>
+        <td class="cell-description">
+            <h3>Pyrinth Liver</h3>
+            <p>Bionic liver infused with <strong>Pyrinth</strong>. <strong>Purifies blood in one fell swoop, burning off contaminants, diseases, and parasites.</strong></p>
+            <div><span class="tag tag-research">Requires: Pyrinth bionics, Bionic replacements</span> </div>
+            <div><span class="tag tag-dlc">Anomaly DLC: May <span class="spoiler">trigger Metal Horror</span>, so use with care in case of <span class="spoiler">Metal Horror</span> outbreak.</span></div>
+        </td>
+        <td class="cell-cost">
+            <table class="cost-table">
+                <tr><td class="amount">15</td><td class="material">Plasteel</td><td class="icon"><img src="textures/Plasteel_c.png" alt="Plasteel"></td></tr>
+                <tr><td class="amount">4</td><td class="material">Advanced Component</td><td class="icon"><img src="textures/Advanced_component.png" alt="Advanced Component"></td></tr>
+                <tr><td class="amount">50</td><td class="material">Pyrinth</td><td class="icon"><img src="textures/Pyrinth_a.png" alt="Pyrinth"></td></tr>
+            </table>
+            <div class="cost-skill">Crafting 6</div>
+        </td>
+        <td class="cell-stats">
+            <ul class="stats-list">
+                <li><strong>Comfy Temperature</strong>: -3°C to -6°C</li>
+                <li><strong><span class="pyrinthheat">Pyrinth Heat</span> Capacity</strong>: +5</li>
+                <li><strong><span class="pyrinthheat">Pyrinth Heat</span> Generation</strong>: +0.1/s</li>
+                <li><strong>Ability</strong>: Pyrinth Liver Purge (cooldown: 1 day, <strong><span class="pyrinthheat">Pyrinth Heat</span> Cost</strong>: 50)</li>
+                <li><strong>Removes</strong>: Lung Rot, Scaria, Gut Worms, Muscle Parasites, etc. and <em>many moded infections</em></li>
+                <li><strong>Reduces severity</strong> of: Infections, Diseases, Carcinoma, Toxic Buildup, etc. and <em>many moded infections</em></li>
+            </ul>
+            <span class="tag tag-dlc">Warning: May cause Heatstroke and Severe Burns</span>
+        </td>
+    </tr>
+
+    <!-- IMPLANT: PYRINTH STOMACH -->
+    <tr>
+        <td class="cell-graphic">
+            <img src="./textures/Gene_RobustDigestion.png" alt="Pyrinth Stomach">
+        </td>
+        <td class="cell-description">
+            <h3>Pyrinth Stomach</h3>
+            <p>Bionic stomach lined with <strong>Pyrinth</strong> that <strong>sterilizes food, making digestion more efficient by cooking ingested matter.</strong></p>
+            <div><span class="tag tag-research">Requires: Pyrinth bionics, Bionic replacements, Artificial metabolism</span> <span class="tag tag-dlc">Royalty DLC Required</span> </div>
+        </td>
+        <td class="cell-cost">
+            <table class="cost-table">
+                <tr><td class="amount">15</td><td class="material">Plasteel</td><td class="icon"><img src="textures/Plasteel_c.png" alt="Plasteel"></td></tr>
+                <tr><td class="amount">4</td><td class="material">Advanced Component</td><td class="icon"><img src="textures/Advanced_component.png" alt="Advanced Component"></td></tr>
+                <tr><td class="amount">50</td><td class="material">Pyrinth</td><td class="icon"><img src="textures/Pyrinth_a.png" alt="Pyrinth"></td></tr>
+            </table>
+            <div class="cost-skill">Crafting 6</div>
+        </td>
+        <td class="cell-stats">
+            <ul class="stats-list">
+                <li><strong>Comfy Temperature</strong>: -3°C to -6°C</li>
+                <li><strong><span class="pyrinthheat">Pyrinth Heat</span> Capacity</strong>: +5</li>
+                <li><strong><span class="pyrinthheat">Pyrinth Heat</span> Generation</strong>: +0.1/s</li>
+                <li><strong>Hunger Rate</strong>: -10%</li>
+                <li><strong>Food Poisoning Chance</strong>: -90%</li>
+                <li><strong>Immunity</strong> to: Gut Worms and other modded gastrointestinal diseases</li>
+            </ul>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<table class="feature-table">
+    <thead>
+    <tr>
+        <th></th>
+        <th>Description</th>
+        <th>Cost</th>
+        <th>Features & Stats</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- ITEM: PYRINTH POTION -->
+    <tr>
+        <td class="cell-graphic">
+            <img src="../Mod/1.6/Textures/Things/Item/Drug/PyrinthBionics/PyrinthPotion.png" alt="Pyrinth Potion">
+        </td>
+        <td class="cell-description">
+            <h3>Pyrinth Potion</h3>
+            <p>Pyrinth solution that <strong>temporarily guards against cold weather by easing hypothermia and charges Pyrinth-based bionics.</strong></p>
+            <div><span class="tag tag-research">Requires: Pyrinth bionics, Drug production</span></div>
+        </td>
+        <td class="cell-cost">
+            <table class="cost-table">
+                <tr><td class="amount">1</td><td class="material">Pyrinth</td><td class="icon"><img src="textures/Pyrinth_a.png" alt="Pyrinth"></td></tr>
+                <tr><td class="amount">5</td><td class="material">Neutroamine</td><td class="icon"><img src="textures/Neutroamine_c.png" alt="Neutroamine"></td></tr>
+            </table>
+            <div class="cost-skill">Crafting 3</div>
+        </td>
+        <td class="cell-stats">
+            <ul class="stats-list">
+                <li>Refills <strong><span class="pyrinthheat">Pyrinth Heat</span></strong> to maximum</li>
+                <li><strong><span class="pyrinthheat">Pyrinth Heat</span> Generation</strong>: +2/s (bonus)</li>
+                <li><strong>Hypothermia Reduction</strong>: -0.01 severity/s</li>
+                <li><strong>Comfy Temperature</strong>: -5°C to -10°C</li>
+                <li><strong>Duration</strong>: 1 Hour</li>
+            </ul>
+            <span class="tag tag-dlc">Warning: May cause Heatstroke</span>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

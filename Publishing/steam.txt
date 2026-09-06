@@ -16,6 +16,9 @@ Pyrinth-based, fire-themed bionic implants with abilities and a new resource to 
     [*]Pyrinth Stomach - (With Royalty) A bionic stomach lined with Pyrinth that sterilizes food, making digestion a bit more efficient by cooking ingested matter. It can prevent gastrointestinal diseases.
 [/list]
 
+[img=https://i.imgur.com/N4myHz3.png]
+
+
 [h3]Extras[/h3]
 
 [list]
@@ -27,6 +30,8 @@ Pyrinth-based, fire-themed bionic implants with abilities and a new resource to 
     [*]Pyrinth implants also heat up pawns, making them vulnerable to hot climates but more resilient to cold.
     [*]Pyrinth Heat is the resource for Pyrinth implant abilities.
 [/list]
+
+[img=https://i.imgur.com/FhPOKFx.png]
 
 [h2]Mod Compatibility[/h2]
 
