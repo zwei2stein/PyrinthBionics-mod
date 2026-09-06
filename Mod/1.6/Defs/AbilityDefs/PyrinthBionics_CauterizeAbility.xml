@@ -4,7 +4,7 @@
   <AbilityDef>
     <defName>PyrinthBionics_CauterizeAbility</defName>
     <label>cauterize bleeding wounds</label>
-    <description>Cauterize bleeding wounds, turning them into burn wounds.</description>
+    <description>Cauterizes bleeding wounds, turning them into burn wounds.</description>
     <iconPath>UI/Abilities/PyrinthBionics/CauterizeWounds</iconPath>
     <stunTargetWhileCasting>true</stunTargetWhileCasting>
     <cooldownTicksRange>60~60</cooldownTicksRange>

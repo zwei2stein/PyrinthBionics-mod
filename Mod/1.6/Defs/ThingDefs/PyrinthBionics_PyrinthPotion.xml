@@ -4,7 +4,7 @@
     <PyrinthBionics.PyrinthPotionItemDef ParentName="DrugBase">
         <defName>PyrinthBionics_PyrinthPotion</defName>
         <label>pyrinth potion</label>
-        <description>Pyrinth solution that temporarily guards against cold weather by easing hypothermia and helps to charge pyrinth based bionics and implants.</description>
+        <description>A Pyrinth solution that temporarily guards against cold weather by easing hypothermia and helps charge Pyrinth-based bionics and implants.</description>
 
         <graphicData>
             <texPath>Things/Item/Drug/PyrinthBionics/PyrinthPotion</texPath>

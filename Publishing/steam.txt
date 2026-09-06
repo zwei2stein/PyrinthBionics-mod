@@ -4,39 +4,40 @@ Add-on for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=333654463
 
 [h2]Features[/h2]
 
-Pyrinth based, fire themed, bionic implants with abilities and new resource to power abilities.
+Pyrinth-based, fire-themed bionic implants with abilities and a new resource to power them.
 
 [h3]Implants[/h3]
 
 [list]
-    [*]Pyrinth Eye - Beautiful eye, giving a pawn an edge in social situations and ability to seduce pawns and influence prisoners and slaves.
-    [*]Pyrinth Arm - Arm that gives pawn the ability to cauterize wounds, turning bleeding into burns and brining off bleeding stumps. It also warms the target up, either reducing severity of hypothermia or giving the pawn heatstroke.
-    [*]Pyrinth Leg - Leg that gives pawn the ability to steam jump.
-    [*]Pyrinth Liver - Bionic liver that gives pawn the ability to purge contaminants, diseases and parasites.
-    [*]Pyrinth Stomach - (With Royalty) A bionic stomach lined with Pyrinth that sterilizes food makes digestion a bit more efficient by cooking ingested matter. It can prevent gastrointensinal diseases.
+    [*]Pyrinth Eye - A beautiful eye that gives a pawn an edge in social situations, granting the ability to seduce pawns and influence prisoners and slaves.
+    [*]Pyrinth Arm - An arm that gives the pawn the ability to cauterize wounds, turning bleeding into burns and burning off bleeding stumps. It also warms the target up, either reducing the severity of hypothermia or giving the pawn heatstroke.
+    [*]Pyrinth Leg - A leg that gives the pawn the ability to pyrinth jump.
+    [*]Pyrinth Liver - A bionic liver that gives the pawn the ability to purge contaminants, diseases, and parasites.
+    [*]Pyrinth Stomach - (With Royalty) A bionic stomach lined with Pyrinth that sterilizes food, making digestion a bit more efficient by cooking ingested matter. It can prevent gastrointestinal diseases.
 [/list]
 
 [h3]Extras[/h3]
 
 [list]
-    [*]Pyrinth potion - refiling Pyrinth Heat and staving off cold.
+    [*]Pyrinth potion - refills Pyrinth Heat and staves off cold.
 [/list]
 
 [list]
     [*]Pyrinth implants give Pyromaniac pawns a mood bonus.
-    [*]Pyrinth implants also heat up pawns, making them vulnerable to hot climates, but more resilient to cold
+    [*]Pyrinth implants also heat up pawns, making them vulnerable to hot climates but more resilient to cold.
     [*]Pyrinth Heat is the resource for Pyrinth implant abilities.
 [/list]
 
 [h2]Mod Compatibility[/h2]
 
 [list]
-    [*]Pyrinth Stove & Smithy - Integrates research to research tree.
+    [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3336544632]Epochs - Pyrinth[/url] (duh, required dependency)
+    [*]Pyrinth Stove & Smithy - Integrates research into the research tree.
 [/list]
 
-[h3]Pyrinth Liver Purge[/h3]
+[h3]Pyrinth Liver[/h3]
 
-Purges selected health conditions (parasites, infections and contaminants) from:
+Purges selected health conditions (parasites, infections, and contaminants) from:
 
 [list]
     [*]Illithid Xenotype (Continued)
@@ -52,6 +53,16 @@ Purges selected health conditions (parasites, infections and contaminants) from:
     [*]Dubs Bad Hygiene
     [*]Biomes! Core
     [*]Biomes! Caverns
+[/list]
+    
+[h3]Pyrinth Stomach[/h3]
+
+Immunity to gastrointestinal diseases from:
+
+[list]
+    [*]FEB's Biopunk Livestock
+    [*]Dubs Bad Hygiene
+[/list]
     
 [/list]
 

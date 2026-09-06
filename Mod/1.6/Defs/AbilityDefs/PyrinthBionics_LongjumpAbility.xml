@@ -3,8 +3,8 @@
 
     <AbilityDef>
         <defName>PyrinthBionics_LongjumpAbility</defName>
-        <label>steam jump</label>
-        <description>Jump to target location.</description>
+        <label>pyrinth jump</label>
+        <description>Jump to the target location.</description>
         <iconPath>UI/Abilities/PyrinthBionics/SteamJump</iconPath>
         <cooldownTicksRange>60~60</cooldownTicksRange>
         <targetRequired>true</targetRequired>

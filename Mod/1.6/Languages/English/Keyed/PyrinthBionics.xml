@@ -9,7 +9,7 @@
   <PyrinthBionics_Gizmo_Gauge_Heat_Label>{ACTUALHEAT} / {MAXHEAT}</PyrinthBionics_Gizmo_Gauge_Heat_Label>
   <PyrinthBionics_Gizmo_Gauge_HeatPS_Label>+{HEATPS}/s</PyrinthBionics_Gizmo_Gauge_HeatPS_Label>
   
-  <PyrinthBionics_Gizmo_NoHeatTracker>No heat tracker. This is likely a bug, uninstall and reinstall Pyrinth-based implant to see if it is fixed.</PyrinthBionics_Gizmo_NoHeatTracker>
+  <PyrinthBionics_Gizmo_NoHeatTracker>No heat tracker. This is likely a bug. Uninstall and reinstall the Pyrinth-based implant to see if it fixes the issue.</PyrinthBionics_Gizmo_NoHeatTracker>
 
   <PyrinthBionics_AbilityHeatCostTooltip>Consumes &lt;color=#C0754D&gt;{COST} Pyrinth Heat&lt;/color&gt; to use.</PyrinthBionics_AbilityHeatCostTooltip>
   
@@ -35,7 +35,7 @@
   
   <PyrinthBionics_StatEntry_HypothermiaReductionLabel>Hypothermia reduction</PyrinthBionics_StatEntry_HypothermiaReductionLabel>
   <PyrinthBionics_StatEntry_HypothermiaReductionValue>-{REDUCTION}/s</PyrinthBionics_StatEntry_HypothermiaReductionValue>
-  <PyrinthBionics_StatEntry_HypothermiaReductionDesc>Hypothermia reduction per seccond</PyrinthBionics_StatEntry_HypothermiaReductionDesc>
+  <PyrinthBionics_StatEntry_HypothermiaReductionDesc>Hypothermia reduction per second</PyrinthBionics_StatEntry_HypothermiaReductionDesc>
   
   <!-- Seduction -->
   
@@ -43,6 +43,6 @@
   
   <!-- Metalhorror -->
   
-  <PyrinthBionics_PyrinthLiverPurge_Metalhorror>{INFECTED_nameDef}'s metalhorror emerged because they attempted to purge their body with power of Pyrinth.</PyrinthBionics_PyrinthLiverPurge_Metalhorror>
+  <PyrinthBionics_PyrinthLiverPurge_Metalhorror>{INFECTED_nameDef}'s metalhorror emerged because they attempted to purge their body with the power of Pyrinth.</PyrinthBionics_PyrinthLiverPurge_Metalhorror>
   
 </LanguageData>

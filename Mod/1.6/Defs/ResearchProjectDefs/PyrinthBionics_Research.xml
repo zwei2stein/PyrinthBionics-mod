@@ -5,7 +5,7 @@
     <ResearchProjectDef>
         <defName>PyrinthBionics_Research</defName>
         <label>Pyrinth bionics</label>
-        <description>Craft bionics powered by Pyrinth crystals and making Pyrinth bio-safe for ingestion and implant use.</description>
+        <description>Crafting bionics powered by Pyrinth crystals, making Pyrinth bio-safe for ingestion and implant use.</description>
         <baseCost>2000</baseCost>
         <techLevel>Spacer</techLevel>
         <tab>DV_EpochsTab</tab>

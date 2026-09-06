@@ -4,7 +4,7 @@
     <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase" MayRequire="Ludeon.RimWorld.Royalty">
         <defName>PyrinthBionics_InstallPyrinthStomach</defName>
         <label>install pyrinth stomach</label>
-        <description>Replace a stomach with a pyrinth stomach. A bionic stomach lined with Pyrinth.</description>
+        <description>Replace a stomach with a Pyrinth stomach. This bionic stomach is lined with Pyrinth.</description>
         <descriptionHyperlinks>
             <ThingDef>PyrinthBionics_PyrinthStomachItem</ThingDef>
             <HediffDef>PyrinthBionics_PyrinthStomach</HediffDef>

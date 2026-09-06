@@ -9,17 +9,17 @@
         <stages>
             <li>
                 <label>botched seduction</label>
-                <description>Fire personified trying to befriend me? That is a nightmare.</description>
+                <description>Fire personified trying to befriend me? What a nightmare.</description>
                 <baseOpinionOffset>-10</baseOpinionOffset>
             </li>
             <li>
                 <label>seduced by pyrinth gaze</label>
-                <description>So beautifull, so full of passion. This is what I want in my life.</description>
+                <description>So beautiful, so full of passion. This is what I want in my life.</description>
                 <baseOpinionOffset>10</baseOpinionOffset>
             </li>
             <li>
                 <label>enthralled by pyrinth gaze</label>
-                <description>Flame is calling to me. In my dreams, in my thoughts. This person is flame in flesh, I should trust them implicitly.</description>
+                <description>Flame is calling to me. In my dreams, in my thoughts. This person is a flame in the flesh; I should trust them implicitly.</description>
                 <baseOpinionOffset>40</baseOpinionOffset>
             </li>
         </stages>

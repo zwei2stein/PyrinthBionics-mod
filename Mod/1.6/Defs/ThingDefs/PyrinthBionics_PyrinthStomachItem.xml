@@ -4,7 +4,7 @@
     <PyrinthBionics.PyrinthItemDef ParentName="PyrinthBionics_ItemBase" MayRequire="Ludeon.RimWorld.Royalty">
         <defName>PyrinthBionics_PyrinthStomachItem</defName>
         <label>pyrinth stomach</label>
-        <description>A bionic stomach lined with Pyrinth that sterilizes food makes digestion a bit more efficient by cooking ingested matter.</description>
+        <description>A bionic stomach lined with Pyrinth that sterilizes food, making digestion a bit more efficient by cooking ingested matter.</description>
         <descriptionHyperlinks>
             <RecipeDef>PyrinthBionics_InstallPyrinthStomach</RecipeDef>
         </descriptionHyperlinks>

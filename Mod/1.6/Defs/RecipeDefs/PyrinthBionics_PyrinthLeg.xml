@@ -4,7 +4,7 @@
     <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
         <defName>PyrinthBionics_InstallPyrinthLeg</defName>
         <label>install pyrinth leg</label>
-        <description>Replace a leg with a pyrinth leg. Granting ability to make long jumps</description>
+        <description>Replace a leg with a Pyrinth leg. This grants the ability to make long jumps.</description>
         <descriptionHyperlinks>
             <ThingDef>PyrinthBionics_PyrinthLegItem</ThingDef>
             <HediffDef>PyrinthBionics_PyrinthLeg</HediffDef>

@@ -4,7 +4,7 @@
     <AbilityDef>
         <defName>PyrinthBionics_PyrinthSeductionAbility</defName>
         <label>pyrinth seduction</label>
-        <description>Hypnotize target and make them fall for caster, devouring their words. Reduces resistance and will of prisoners. Increases suppression of slaves. Slightly increases opinion of pawn. Has much greater effect on pyromaniacs, but can backfire of pyrophobic pawns.</description>
+        <description>Hypnotizes the target, making them fall for the caster and devour their words. Reduces prisoner resistance and will. Increases slave suppression. Slightly increases the pawn's opinion.\n\nHas a much greater effect on pyromaniacs, but can backfire on pyrophobic pawns.</description>
         <iconPath>UI/Abilities/PyrinthBionics/PyrinthSeduction</iconPath>
         <stunTargetWhileCasting>true</stunTargetWhileCasting>
         <cooldownTicksRange>60000~60000</cooldownTicksRange>

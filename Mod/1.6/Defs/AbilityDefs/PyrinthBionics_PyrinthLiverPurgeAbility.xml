@@ -4,7 +4,7 @@
     <AbilityDef>
         <defName>PyrinthBionics_PyrinthLiverPurgeAbility</defName>
         <label>pyrinth liver purge</label>
-        <description>Trigger immune reaction in liver, trying to burn off contaminants and infections.</description>
+        <description>Trigger an immune reaction in the liver, burning off contaminants and infections.</description>
         <iconPath>UI/Abilities/PyrinthBionics/PyrinthLiverPurge</iconPath>
         <cooldownTicksRange>60000~60000</cooldownTicksRange>
         <targetRequired>false</targetRequired>

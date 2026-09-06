@@ -4,7 +4,7 @@
     <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
         <defName>PyrinthBionics_InstallPyrinthEye</defName>
         <label>install pyrinth eye</label>
-        <description>Replace an eye with a pyrinth implant that makes the wearer more beautiful and hypnotic.</description>
+        <description>Replace an eye with a Pyrinth implant that makes the wearer more beautiful and hypnotic.</description>
         <descriptionHyperlinks>
             <ThingDef>PyrinthBionics_PyrinthEyeItem</ThingDef>
             <HediffDef>PyrinthBionics_PyrinthEye</HediffDef>

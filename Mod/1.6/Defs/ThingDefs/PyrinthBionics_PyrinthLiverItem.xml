@@ -4,7 +4,7 @@
     <PyrinthBionics.PyrinthItemDef ParentName="PyrinthBionics_ItemBase">
         <defName>PyrinthBionics_PyrinthLiverItem</defName>
         <label>pyrinth liver</label>
-        <description>Bionic liver infused with Pyrinth. It can purify blood in one fell swoop, burning off contaminants.</description>
+        <description>A bionic liver infused with Pyrinth. It can purify blood in one fell swoop, burning off contaminants.</description>
         <descriptionHyperlinks>
             <RecipeDef>PyrinthBionics_InstallPyrinthLiver</RecipeDef>
         </descriptionHyperlinks>

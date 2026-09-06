@@ -4,7 +4,7 @@
     <PyrinthBionics.PyrinthItemDef ParentName="PyrinthBionics_ItemBase">
         <defName>PyrinthBionics_PyrinthLegItem</defName>
         <label>pyrinth leg</label>
-        <description>A bionic leg powered by Pyrinth crystals. It can use stored heat to superheat water to create a jet that fuels powerfull jumps.</description>
+        <description>A bionic leg powered by Pyrinth crystals. It can use stored heat to superheat water to create a jet that fuels powerful jumps.</description>
         <descriptionHyperlinks>
             <RecipeDef>PyrinthBionics_InstallPyrinthLeg</RecipeDef>
         </descriptionHyperlinks>

@@ -4,7 +4,7 @@
     <PyrinthBionics.PyrinthItemDef ParentName="PyrinthBionics_ItemBase">
         <defName>PyrinthBionics_PyrinthEyeItem</defName>
         <label>pyrinth eye</label>
-        <description>Beautiful eye. Pyrinth crystals powering it seem hypnotizing</description>
+        <description>Beautiful eye. The Pyrinth crystals powering it seem hypnotic.</description>
         <descriptionHyperlinks>
             <RecipeDef>PyrinthBionics_InstallPyrinthEye</RecipeDef>
         </descriptionHyperlinks>

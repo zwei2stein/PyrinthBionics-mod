@@ -5,7 +5,7 @@
         <defName>PyrinthBionics_PyrinthEye</defName>
         <label>pyrinth eye</label>
         <labelNoun>a pyrinth eye</labelNoun>
-        <description>Beautiful eye. The Pyrinth crystals powering it seem hypnotizing.</description>
+        <description>Beautiful eye. The Pyrinth crystals powering it seem hypnotic.</description>
         <descriptionHyperlinks>
             <ThingDef>PyrinthBionics_PyrinthEyeItem</ThingDef>
         </descriptionHyperlinks>

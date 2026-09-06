@@ -5,7 +5,7 @@
         <defName>PyrinthBionics_PyrinthStomach</defName>
         <label>pyrinth stomach</label>
         <labelNoun>a pyrinth stomach</labelNoun>
-        <description>A bionic stomach lined with Pyrinth that sterilizes food makes digestion a bit more efficient by cooking ingested matter.</description>
+        <description>A bionic stomach lined with Pyrinth that sterilizes food, making digestion a bit more efficient by cooking ingested matter.</description>
         <descriptionHyperlinks>
             <ThingDef>PyrinthBionics_PyrinthStomachItem</ThingDef>
         </descriptionHyperlinks>

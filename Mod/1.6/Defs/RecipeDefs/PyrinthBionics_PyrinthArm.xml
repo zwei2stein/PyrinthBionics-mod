@@ -5,7 +5,7 @@
     <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
         <defName>PyrinthBionics_InstallPyrinthArm</defName>
         <label>install pyrinth arm</label>
-        <description>Replace an arm with a pyrinth arm. A bionic granting ability to cauterize wounds.</description>
+        <description>Replace an arm with a Pyrinth arm. This bionic grants the ability to cauterize wounds.</description>
         <descriptionHyperlinks>
             <ThingDef>PyrinthBionics_PyrinthArmItem</ThingDef>
             <HediffDef>PyrinthBionics_PyrinthArm</HediffDef>
