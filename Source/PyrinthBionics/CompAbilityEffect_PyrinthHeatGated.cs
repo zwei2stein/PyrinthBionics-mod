@@ -28,11 +28,6 @@ namespace PyrinthBionics
         
         public override bool GizmoDisabled(out string reason)
         {
-            if (parent?.verb is Verb_CastAbility vca && vca.ability == null)
-            {
-                vca.Ability = parent;
-            }
-            
             var tracker = Heat;
 
             if (tracker == null)

@@ -5,8 +5,7 @@
         <defName>PyrinthBionics_PyrinthLeg</defName>
         <label>pyrinth leg</label>
         <labelNoun>a pyrinth leg</labelNoun>
-        <description>A bionic leg powered by Pyrinth crystals. It can use stored heat to superheat water to create a jet
-            that fuels powerfull jumps.</description>
+        <description>A bionic leg powered by Pyrinth crystals. It can use stored heat to superheat water to create a jet that fuels powerfull jumps.</description>
         <descriptionHyperlinks>
             <ThingDef>PyrinthBionics_PyrinthLegItem</ThingDef>
         </descriptionHyperlinks>

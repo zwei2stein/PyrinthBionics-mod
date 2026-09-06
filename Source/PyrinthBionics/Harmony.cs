@@ -23,7 +23,7 @@ namespace PyrinthBionics
                 if (ability?.verb is Verb_CastAbility vca && vca.ability == null)
                 {
                     vca.Ability = ability;
-                    Log.Message("[PyrinthBionic] patched null ability in verb cast ability " + ability.def.defName);
+                    Log.Message("[PyrinthBionics] patched null ability in verb cast ability " + ability.def.defName);
                 }
             }
         }

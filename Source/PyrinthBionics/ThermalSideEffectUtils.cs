@@ -1,4 +1,5 @@
 using System;
+using RimWorld;
 using UnityEngine;
 using Verse;
 
@@ -10,7 +11,7 @@ namespace PyrinthBionics
         {
             var heatStrokeSideEffectActual = heatStrokeSideEffect.RandomInRange;
                 
-            var hypothermia = targetPawn.health.hediffSet.GetFirstHediffOfDef(PyrinthBionicsDefOf.Hypothermia);
+            var hypothermia = targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Hypothermia);
 
             if (hypothermia != null && hypothermia.Severity > 0f)
             {
@@ -20,7 +21,7 @@ namespace PyrinthBionics
 
                 if (hypothermiaSeverityReductionLeftover > 0)
                 {
-                    var heatstrokeFromLeftover = HediffMaker.MakeHediff(PyrinthBionicsDefOf.Heatstroke, targetPawn);
+                    var heatstrokeFromLeftover = HediffMaker.MakeHediff(HediffDefOf.Heatstroke, targetPawn);
                     heatstrokeFromLeftover.Severity = hypothermiaSeverityReductionLeftover;
                     targetPawn.health.AddHediff(heatstrokeFromLeftover);
                 }
@@ -28,14 +29,14 @@ namespace PyrinthBionics
                 return;
             }
 
-            var heatstroke = targetPawn.health.hediffSet.GetFirstHediffOfDef(PyrinthBionicsDefOf.Heatstroke);
+            var heatstroke = targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Heatstroke);
             if (heatstroke != null)
             {
                 heatstroke.Severity += heatStrokeSideEffectActual;
             }
             else
             {
-                heatstroke = HediffMaker.MakeHediff(PyrinthBionicsDefOf.Heatstroke, targetPawn);
+                heatstroke = HediffMaker.MakeHediff(HediffDefOf.Heatstroke, targetPawn);
                 heatstroke.Severity = heatStrokeSideEffectActual;
                 targetPawn.health.AddHediff(heatstroke);
             }

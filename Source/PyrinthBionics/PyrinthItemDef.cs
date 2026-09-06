@@ -13,7 +13,7 @@ namespace PyrinthBionics
             foreach (var entry in base.SpecialDisplayStats(req))
                 yield return entry;
 
-            var ext = linkedHediff.GetModExtension<PyrinthBionicsImplantExtension>();
+            var ext = linkedHediff?.GetModExtension<PyrinthBionicsImplantExtension>();
 
             foreach (var entry in PyrinthBionicsUtility.HeatStatEntries(ext))
                 yield return entry;
@@ -54,7 +54,7 @@ namespace PyrinthBionics
                         yield return new StatDrawEntry(
                             PyrinthBionicsDefOf.PyrinthBionics_StatCategory,
                             "PyrinthBionics_StatEntry_HeatPerSecondLabel".Translate(),
-                            "+" + heatProps.heatPerSecondBonus.ToString("F1"),
+                            "PyrinthBionics_Gizmo_Gauge_HeatPS_Label".Translate(heatProps.heatPerSecondBonus.ToString("F1").Named("HEATPS")),
                             "PyrinthBionics_StatEntry_HeatPerSecondDesc".Translate(),
                             999);
                     }
