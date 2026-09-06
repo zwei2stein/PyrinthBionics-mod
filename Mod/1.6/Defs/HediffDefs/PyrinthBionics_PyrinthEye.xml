@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HediffDef ParentName="PyrinthBionics_HediffBase">
+        <defName>PyrinthBionics_PyrinthEye</defName>
+        <label>pyrinth eye</label>
+        <labelNoun>a pyrinth eye</labelNoun>
+        <description>Beautiful eye. The Pyrinth crystals powering it seem hypnotizing.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PyrinthBionics_PyrinthEyeItem</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>PyrinthBionics_PyrinthEyeItem</spawnThingOnRemoved>
+        <abilities>
+            <li>PyrinthBionics_PyrinthSeductionAbility</li>
+        </abilities>
+        <defaultLabelColor>(192,117,77)</defaultLabelColor>
+        <stages>
+            <li>
+                <statOffsets>
+                    <PawnBeauty>1</PawnBeauty>
+                    <ComfyTemperatureMax>-3</ComfyTemperatureMax>
+                    <ComfyTemperatureMin>-6</ComfyTemperatureMin>
+                </statOffsets>
+                <statFactors>
+                    <SocialImpact>1.15</SocialImpact>
+                </statFactors>
+            </li>
+        </stages>
+        <renderNodeProperties>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+                <texPath>Things/Pawn/Wounds/PyrinthEye</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.15</drawSize>
+                <drawData>
+                    <defaultData>
+                        <layer>56</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                    </defaultData>
+                    <dataWest>
+                        <flip>true</flip>
+                    </dataWest>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <modExtensions>
+            <li Class="PyrinthBionics.PyrinthBionicsImplantExtension">
+                <heatCapacity>5</heatCapacity>
+                <heatPerSecond>0.1</heatPerSecond>
+            </li>
+        </modExtensions>
+    </HediffDef>
+
+</Defs>

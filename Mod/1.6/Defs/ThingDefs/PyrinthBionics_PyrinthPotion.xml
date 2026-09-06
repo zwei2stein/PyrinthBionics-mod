@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PyrinthBionics.PyrinthPotionItemDef ParentName="DrugBase">
+        <defName>PyrinthBionics_PyrinthPotion</defName>
+        <label>pyrinth potion</label>
+        <description>Pyrinth solution that temporarily guards against cold weather by easing hypothermia and helps to charge pyrinth based bionics and implants.</description>
+
+        <graphicData>
+            <texPath>Things/Item/Drug/PyrinthBionics/PyrinthPotion</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <ingestible>
+            <foodType>Fluid</foodType>
+            <drugCategory>Medical</drugCategory>
+
+            <outcomeDoers>
+                <li Class="PyrinthBionics.IngestionOutcomeDoer_FillPyrinthHeat">
+                    <heatstrokeSeverityGain>0.20</heatstrokeSeverityGain>
+                </li>
+
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>PyrinthBionics_PyrinthPotionEffect</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+
+        <statBases>
+            <MarketValue>120</MarketValue>
+            <Mass>0.1</Mass>
+        </statBases>
+
+        <comps>
+            <li Class="CompProperties_Drug">
+                <listOrder>1000</listOrder>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>2</glowRadius>
+                <glowColor>(192,117,77,0)</glowColor>
+            </li>
+        </comps>
+    </PyrinthBionics.PyrinthPotionItemDef>
+
+</Defs>

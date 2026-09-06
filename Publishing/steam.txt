@@ -1,0 +1,67 @@
+[h1]Pyrinth Bionics[/h1]
+
+Add-on for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3336544632]Epochs - Pyrinth[/url], adding bionic implants powered by Pyrinth.
+
+[h2]Features[/h2]
+
+Pyrinth based, fire themed, bionic implants with abilities and new resource to power abilities.
+
+[h3]Implants[/h3]
+
+[list]
+    [*]Pyrinth Eye - Beautiful eye, giving a pawn an edge in social situations and ability to seduce pawns and influence prisoners and slaves.
+    [*]Pyrinth Arm - Arm that gives pawn the ability to cauterize wounds, turning bleeding into burns and brining off bleeding stumps. It also warms the target up, either reducing severity of hypothermia or giving the pawn heatstroke.
+    [*]Pyrinth Leg - Leg that gives pawn the ability to steam jump.
+    [*]Pyrinth Liver - Bionic liver that gives pawn the ability to purge contaminants, diseases and parasites.
+    [*]Pyrinth Stomach - (With Royalty) A bionic stomach lined with Pyrinth that sterilizes food makes digestion a bit more efficient by cooking ingested matter. It can prevent gastrointensinal diseases.
+[/list]
+
+[h3]Extras[/h3]
+
+[list]
+    [*]Pyrinth potion - refiling Pyrinth Heat and staving off cold.
+[/list]
+
+[list]
+    [*]Pyrinth implants give Pyromaniac pawns a mood bonus.
+    [*]Pyrinth implants also heat up pawns, making them vulnerable to hot climates, but more resilient to cold
+    [*]Pyrinth Heat is the resource for Pyrinth implant abilities.
+[/list]
+
+[h2]Mod Compatibility[/h2]
+
+[list]
+    [*]Pyrinth Stove & Smithy - Integrates research to research tree.
+[/list]
+
+[h3]Pyrinth Liver Purge[/h3]
+
+Purges selected health conditions (parasites, infections and contaminants) from:
+
+[list]
+    [*]Illithid Xenotype (Continued)
+    [*]Gene Leech Symbiont
+    [*]Addie's Frost Fey
+    [*]Cybranian - Anomaly Lord of the Flies
+    [*]Roo's Faun Xenotype
+    [*]FEB's Biopunk Livestock
+    [*]Ecotech
+    [*]Vanilla Landmarks Expanded
+    [*]Vanilla Quests Expanded - Cryptoforge
+    [*]Mashed's Ashlands
+    [*]Dubs Bad Hygiene
+    [*]Biomes! Core
+    [*]Biomes! Caverns
+    
+[/list]
+
+[hr][/hr]
+
+[url=https://github.com/zwei2stein/pyrinthbionics-mod/]Source Code[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3651274426]My Other Mods[/url]
+
+[hr][/hr]
+
+[h2]Thanks[/h2]
+
+Many thanks to the RimWorld Modding Discord for their help.

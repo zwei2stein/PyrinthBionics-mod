@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <AbilityDef>
+        <defName>PyrinthBionics_PyrinthLiverPurgeAbility</defName>
+        <label>pyrinth liver purge</label>
+        <description>Trigger immune reaction in liver, trying to burn off contaminants and infections.</description>
+        <iconPath>UI/Abilities/PyrinthBionics/PyrinthLiverPurge</iconPath>
+        <cooldownTicksRange>60000~60000</cooldownTicksRange>
+        <targetRequired>false</targetRequired>
+        <aiCanUse>true</aiCanUse>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <label>pyrinth liver purge</label>
+            <violent>false</violent>
+            <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+            <drawAimPie>false</drawAimPie>
+            <targetable>false</targetable>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetHumans>false</canTargetHumans>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetMechs>false</canTargetMechs>
+            </targetParams>
+            <warmupTime>1</warmupTime>
+        </verbProperties>
+        <comps>
+            <li Class="PyrinthBionics.CompProperties_AbilityPyrinthLiverPurge">
+                <heatCost>50</heatCost>
+                <heatStrokeSideEffect>0.2~0.4</heatStrokeSideEffect>
+                <burnSeverityRange>0.5~2.0</burnSeverityRange>
+                <removedHediffs>
+                    <li>LungRotExposure</li>
+                    
+                    <li>ScariaInfection</li>
+
+                    <li>GutWorms</li>
+                    <li>MuscleParasites</li>
+                    
+                    <li>SensoryMechanites</li>
+                    <li>FibrousMechanites</li>   
+                    
+                    <!-- From mods: -->
+                    
+                    <li MayRequire="zal.illithid">GS_TadpoleHediff</li>
+                    <li MayRequire="Elosth.GeneLeechSymbiont">Elosth_GeneLeechSymbiont_Hediff_GeneLeechSymbiont</li>
+                    <li MayRequire="addie.frostfey">Addie_IceArmorHediff</li>
+                    <li MayRequire="addie.frostfey">Addie_FrozenHediff</li>
+                    <li MayRequire="addie.frostfey">Addie_AteFrostcream</li>
+                    <li MayRequire="DimonSever000.AnomalyFlylord">AsphyxiatingGases</li>
+                    <li MayRequire="V.Rooboid.Faun">RBSF_GoodTripHediff</li>
+                    <li MayRequire="V.Rooboid.Faun">RBSF_BadTripHediff</li>
+                    <li MayRequire="feb.biopunklivestock">FEB_GutMechanites</li>
+                    <li MayRequire="feb.biopunklivestock">FEB_ScariaNeurosa</li>
+                    <li MayRequire="RA.Ecotech">ET_NightshadeDamageBuildup</li>
+                    <li MayRequire="VanillaExpanded.VExplorationE">VEE_RottenStench</li>
+                </removedHediffs>
+                <severityDecreasedHediffs>
+                    <li>SleepingSickness</li>
+                    <li>WoundInfection</li>
+                    <li>Malaria</li>
+                    <li>Flu</li>
+                    <li>Plague</li>
+
+                    <li>HeartArteryBlockage</li>
+                    <li>Carcinoma</li>
+                    
+                    <li>ToxicBuildup</li>
+                    <li>DrugOverdose</li>
+                    
+                    <li>FoodPoisoning</li>
+                    
+                    <!-- From mods: -->
+                    
+                    <li MayRequire="vanillaquestsexpanded.cryptoforge">VQE_CryptoSlowdown</li>
+                    <li MayRequire="BiomesTeam.BiomesCore">BMT_Paralysis</li>
+                    <li MayRequire="BiomesTeam.BiomesCaverns">BMT_SporesBuildup</li>
+                    <li MayRequire="BiomesTeam.BiomesCaverns">BMT_HediffSkulltopSpores</li>
+                    <li MayRequire="BiomesTeam.BiomesCaverns">BMT_PurpleLung</li>
+                    <li MayRequire="BiomesTeam.BiomesCaverns">BMT_SporeFlesh</li>
+                    <li MayRequire="SirMashedPotato.Ashlands">Mashed_Ashlands_SwampFever</li>
+                    <li MayRequire="RA.Ecotech">ET_BriarHediff</li>
+                    
+                    <li MayRequire="Dubwise.DubsBadHygiene">Diarrhea</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Dysentery</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Cholera</li>
+                </severityDecreasedHediffs>
+                <severityDecrease>0.20~0.40</severityDecrease>
+            </li>
+        </comps>
+    </AbilityDef>
+
+</Defs>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HediffDef ParentName="PyrinthBionics_HediffBase">
+        <defName>PyrinthBionics_PyrinthLiver</defName>
+        <label>pyrinth liver</label>
+        <labelNoun>a pyrinth liver</labelNoun>
+        <description>Bionic liver infused with Pyrinth. It can purify blood in one fell swoop, burning off contaminants and diseases.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PyrinthBionics_PyrinthLiverItem</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>PyrinthBionics_PyrinthLiverItem</spawnThingOnRemoved>
+        <defaultLabelColor>(192,117,77)</defaultLabelColor>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ComfyTemperatureMax>-3</ComfyTemperatureMax>
+                    <ComfyTemperatureMin>-6</ComfyTemperatureMin>
+                </statOffsets>
+            </li>
+        </stages>
+        <abilities>
+            <li>PyrinthBionics_PyrinthLiverPurgeAbility</li>
+        </abilities>
+        <modExtensions>
+            <li Class="PyrinthBionics.PyrinthBionicsImplantExtension">
+                <heatCapacity>5</heatCapacity>
+                <heatPerSecond>0.1</heatPerSecond>
+            </li>
+        </modExtensions>
+    </HediffDef>
+
+</Defs>

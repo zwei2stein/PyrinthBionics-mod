@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HediffDef>
+        <defName>PyrinthBionics_PyrinthHeat</defName>
+        <label>pyrinth heat</label>
+        <description>pyrinth heat</description>
+        <hediffClass>PyrinthBionics.Hediff_PyrinthHeat</hediffClass>
+        <isBad>false</isBad>
+    </HediffDef>
+    
+</Defs>

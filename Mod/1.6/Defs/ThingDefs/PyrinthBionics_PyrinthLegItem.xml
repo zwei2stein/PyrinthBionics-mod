@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PyrinthBionics.PyrinthItemDef ParentName="PyrinthBionics_ItemBase">
+        <defName>PyrinthBionics_PyrinthLegItem</defName>
+        <label>pyrinth leg</label>
+        <description>A bionic leg powered by Pyrinth crystals. It can use stored heat to superheat water to create a jet that fuels powerfull jumps.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>PyrinthBionics_InstallPyrinthLeg</RecipeDef>
+        </descriptionHyperlinks>
+        <thingSetMakerTags>
+            <li>RewardStandardMidFreq</li>
+        </thingSetMakerTags>
+        <linkedHediff>PyrinthBionics_PyrinthLeg</linkedHediff>
+        <statBases>
+            <MarketValue>900</MarketValue>
+            <Mass>8</Mass>
+            <WorkToMake>20000</WorkToMake>
+        </statBases>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+            <DV_Pyrinth>50</DV_Pyrinth>
+        </costList>
+    </PyrinthBionics.PyrinthItemDef>
+
+</Defs>

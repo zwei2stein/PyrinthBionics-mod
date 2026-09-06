@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <StatCategoryDef>
+        <defName>PyrinthBionics_StatCategory</defName>
+        <label>pyrinth bionics</label>
+        <displayOrder>100</displayOrder>
+        <displayAllByDefault>true</displayAllByDefault>
+    </StatCategoryDef>
+
+</Defs>

@@ -1,0 +1,6 @@
+/Assemblies/*
+/Source/PyrinthBionics/packages/*
+/Source/PyrinthBionics/bin/*
+/Source/PyrinthBionics/obj/*
+/Source/PyrinthBionics/.idea/*
+Source/PyrinthBionics/PyrinthBionics.sln.DotSettings.user

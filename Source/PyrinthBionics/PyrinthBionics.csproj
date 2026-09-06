@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+            Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{5770887A-AE85-474F-BB54-613A4CDAFCB9}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>PyrinthBionics</RootNamespace>
+        <AssemblyName>PyrinthBionics</AssemblyName>
+        <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <LangVersion>9</LangVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>false</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>../../Assemblies</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>../../Assemblies</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="0Harmony, Version=2.4.2.0, Culture=neutral, processorArchitecture=MSIL">
+          <HintPath>packages\Lib.Harmony.2.4.2\lib\net472\0Harmony.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Assembly-CSharp">
+            <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="System"/>
+        <Reference Include="System.Core"/>
+        <Reference Include="System.Data"/>
+        <Reference Include="System.Xml"/>
+        <Reference Include="UnityEngine">
+            <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.IMGUIModule">
+            <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.TextRenderingModule">
+            <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="CompAbilityEffect_AbilityPyrinthLiverPurge.cs" />
+        <Compile Include="CompAbilityEffect_AbilityPyrinthSeduction.cs" />
+        <Compile Include="CompAbilityEffect_CauterizeWounds.cs"/>
+        <Compile Include="CompAbilityEffect_ImplantJump.cs"/>
+        <Compile Include="CompAbilityEffect_PyrinthHeatGated.cs"/>
+        <Compile Include="Gizmo_PyrinthHeat.cs"/>
+        <Compile Include="Harmony.cs" />
+        <Compile Include="HediffComp_PyrinthHeatBoost.cs" />
+        <Compile Include="HediffComp_PyrinthHypothermiaTreatment.cs" />
+        <Compile Include="Hediff_PyrinthHeat.cs"/>
+        <Compile Include="Hediff_PyrinthImplant.cs"/>
+        <Compile Include="IngestionOutcomeDoer_FillPyrinthHeat.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="PyrinthBionicsDefOf.cs"/>
+        <Compile Include="PyrinthBionicsUtility.cs"/>
+        <Compile Include="PyrinthHeatTracker.cs"/>
+        <Compile Include="PyrinthHeatUtility.cs"/>
+        <Compile Include="PyrinthItemDef.cs" />
+        <Compile Include="ThermalSideEffectUtils.cs" />
+        <Compile Include="ThoughtWorker_PyromaniacImplants.cs"/>
+        <Compile Include="Verb_PyrinthJump.cs"/>
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="packages.config" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+    <Target Name="AfterBuild">
+        <Copy SourceFiles="$(TargetPath)" DestinationFolder="C:\pri\Proton\My files\Code\rimworld_mods\PyrinthBionics\Mod\1.6\Assemblies"/>
+        <Copy SourceFiles="$(TargetDir)$(TargetName).pdb" DestinationFolder="C:\pri\Proton\My files\Code\rimworld_mods\PyrinthBionics\Mod\1.6\Assemblies" Condition="Exists('$(TargetDir)$(TargetName).pdb')"/>
+    </Target>
+
+
+</Project>

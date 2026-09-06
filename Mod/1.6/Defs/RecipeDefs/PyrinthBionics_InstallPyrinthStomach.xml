@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>PyrinthBionics_InstallPyrinthStomach</defName>
+        <label>install pyrinth stomach</label>
+        <description>Replace a stomach with a pyrinth stomach. A bionic stomach lined with Pyrinth.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PyrinthBionics_PyrinthStomachItem</ThingDef>
+            <HediffDef>PyrinthBionics_PyrinthStomach</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing pyrinth stomach.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PyrinthBionics_PyrinthStomachItem</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PyrinthBionics_PyrinthStomachItem</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Stomach</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>PyrinthBionics_PyrinthStomach</addsHediff>
+    </RecipeDef>
+
+</Defs>

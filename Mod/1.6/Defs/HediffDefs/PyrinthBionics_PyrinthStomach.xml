@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HediffDef ParentName="PyrinthBionics_HediffBase" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>PyrinthBionics_PyrinthStomach</defName>
+        <label>pyrinth stomach</label>
+        <labelNoun>a pyrinth stomach</labelNoun>
+        <description>A bionic stomach lined with Pyrinth that sterilizes food makes digestion a bit more efficient by cooking ingested matter.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PyrinthBionics_PyrinthStomachItem</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>PyrinthBionics_PyrinthStomachItem</spawnThingOnRemoved>
+        <defaultLabelColor>(192,117,77)</defaultLabelColor>
+        <stages>
+            <li>
+                <makeImmuneTo>
+                    <li>GutWorms</li>
+                    
+                    <!-- From mods: -->
+                    
+                    <li MayRequire="feb.biopunklivestock">FEB_GutMechanites</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Diarrhea</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Dysentery</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Cholera</li>
+                </makeImmuneTo>
+                <hungerRateFactor>0.9</hungerRateFactor>
+                <foodPoisoningChanceFactor>0.1</foodPoisoningChanceFactor>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="PyrinthBionics.PyrinthBionicsImplantExtension">
+                <heatCapacity>5</heatCapacity>
+                <heatPerSecond>0.1</heatPerSecond>
+            </li>
+        </modExtensions>
+    </HediffDef>
+
+</Defs>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HediffDef ParentName="PyrinthBionics_LimbHediffBase">
+        <defName>PyrinthBionics_PyrinthLeg</defName>
+        <label>pyrinth leg</label>
+        <labelNoun>a pyrinth leg</labelNoun>
+        <description>A bionic leg powered by Pyrinth crystals. It can use stored heat to superheat water to create a jet
+            that fuels powerfull jumps.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PyrinthBionics_PyrinthLegItem</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>PyrinthBionics_PyrinthLegItem</spawnThingOnRemoved>
+        <abilities>
+            <li>PyrinthBionics_LongjumpAbility</li>
+        </abilities>
+        <modExtensions>
+            <li Class="PyrinthBionics.PyrinthBionicsImplantExtension">
+                <heatCapacity>10</heatCapacity>
+                <heatPerSecond>0.5</heatPerSecond>
+            </li>
+        </modExtensions>
+    </HediffDef>
+
+</Defs>

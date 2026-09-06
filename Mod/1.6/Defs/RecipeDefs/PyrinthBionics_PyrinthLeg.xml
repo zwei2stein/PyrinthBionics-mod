@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+        <defName>PyrinthBionics_InstallPyrinthLeg</defName>
+        <label>install pyrinth leg</label>
+        <description>Replace a leg with a pyrinth leg. Granting ability to make long jumps</description>
+        <descriptionHyperlinks>
+            <ThingDef>PyrinthBionics_PyrinthLegItem</ThingDef>
+            <HediffDef>PyrinthBionics_PyrinthLeg</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing pyrinth leg.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PyrinthBionics_PyrinthLegItem</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PyrinthBionics_PyrinthLegItem</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Leg</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>PyrinthBionics_PyrinthLeg</addsHediff>
+    </RecipeDef>
+
+</Defs>

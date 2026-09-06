@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PyrinthBionics.PyrinthItemDef ParentName="PyrinthBionics_ItemBase">
+        <defName>PyrinthBionics_PyrinthLiverItem</defName>
+        <label>pyrinth liver</label>
+        <description>Bionic liver infused with Pyrinth. It can purify blood in one fell swoop, burning off contaminants.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>PyrinthBionics_InstallPyrinthLiver</RecipeDef>
+        </descriptionHyperlinks>
+        <linkedHediff>PyrinthBionics_PyrinthLiver</linkedHediff>
+        <statBases>
+            <MarketValue>1200</MarketValue>
+            <Mass>2</Mass>
+            <WorkToMake>14000</WorkToMake>
+        </statBases>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+            <DV_Pyrinth>50</DV_Pyrinth>
+        </costList>
+    </PyrinthBionics.PyrinthItemDef>
+
+</Defs>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PyrinthBionics.PyrinthItemDef Name="PyrinthBionics_ItemBase" ParentName="BodyPartBionicBase" Abstract="true">
+        <techLevel>Spacer</techLevel>
+        <tradeTags>
+            <li>Bionic</li>
+            <li>PyrinthBionics</li>
+        </tradeTags>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <graphicData>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(192,117,77)</color>
+        </graphicData>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>PyrinthBionics_Research</li>
+            </researchPrerequisites>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <displayPriority>460</displayPriority>
+            <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+        </recipeMaker>
+    </PyrinthBionics.PyrinthItemDef>
+
+</Defs>

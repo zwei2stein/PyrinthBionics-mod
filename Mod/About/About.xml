@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <packageId>zwei2stein.pyrinthbionics</packageId>
+  <name>Pyrinth Bionics</name>
+  <author>zwei2stein</author>
+  <modVersion>1.0</modVersion>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Pyrinth-based bionics: Cauterize wounds, Steam-powered jumps, and more.</description>
+  <modDependencies>
+    <li>
+      <packageId>det.epochspyrinth</packageId>
+      <displayName>Epochs - Pyrinth</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3336544632</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    
+    <li>zal.illithid</li>
+    <li>Elosth.GeneLeechSymbiont</li>
+    <li>addie.frostfey</li>
+    <li>DimonSever000.AnomalyFlylord</li>
+    <li>V.Rooboid.Faun</li>
+    <li>feb.biopunklivestock</li>
+    <li>RA.Ecotech</li>
+    <li>VanillaExpanded.VExplorationE</li>
+    <li>vanillaquestsexpanded.cryptoforge</li>
+    <li>SirMashedPotato.Ashlands</li>
+    <li>Dubwise.DubsBadHygiene</li>
+    <li>BiomesTeam.BiomesCore</li>
+    <li>BiomesTeam.BiomesCaverns</li>
+    
+    <li>det.epochspyrinth</li>
+    <li>zwei2stein.PyrinthStove</li>
+  </loadAfter>
+</ModMetaData>

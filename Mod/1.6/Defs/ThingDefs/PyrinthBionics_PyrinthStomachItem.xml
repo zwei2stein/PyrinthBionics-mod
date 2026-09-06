@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PyrinthBionics.PyrinthItemDef ParentName="PyrinthBionics_ItemBase" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>PyrinthBionics_PyrinthStomachItem</defName>
+        <label>pyrinth stomach</label>
+        <description>A bionic stomach lined with Pyrinth that sterilizes food makes digestion a bit more efficient by cooking ingested matter.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>PyrinthBionics_InstallPyrinthStomach</RecipeDef>
+        </descriptionHyperlinks>
+        <linkedHediff>PyrinthBionics_PyrinthStomach</linkedHediff>
+        <tradeTags>
+            <li>ImplantEmpireCommon</li>
+            <li>PyrinthBionics</li>
+        </tradeTags>
+        <techHediffsTags>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+        <statBases>
+            <MarketValue>1200</MarketValue>
+            <Mass>2</Mass>
+            <WorkToMake>14000</WorkToMake>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>ArtificialMetabolism</li>
+                <li>PyrinthBionics_Research</li>
+            </researchPrerequisites>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+            <DV_Pyrinth>50</DV_Pyrinth>
+        </costList>
+    </PyrinthBionics.PyrinthItemDef>
+
+</Defs>

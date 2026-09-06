@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PyrinthBionics.PyrinthItemDef ParentName="PyrinthBionics_ItemBase">
+        <defName>PyrinthBionics_PyrinthArmItem</defName>
+        <label>pyrinth arm</label>
+        <description>A bionic arm powered by Pyrinth crystals. It can unleash stored heat to cauterize wounds.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>PyrinthBionics_InstallPyrinthArm</RecipeDef>
+        </descriptionHyperlinks>
+        <linkedHediff>PyrinthBionics_PyrinthArm</linkedHediff>
+        <thingSetMakerTags>
+            <li>RewardStandardMidFreq</li>
+        </thingSetMakerTags>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <Mass>5</Mass>
+            <WorkToMake>18000</WorkToMake>
+        </statBases>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+            <DV_Pyrinth>50</DV_Pyrinth>
+        </costList>
+    </PyrinthBionics.PyrinthItemDef>
+
+</Defs>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HediffDef Name="PyrinthBionics_HediffBase" Abstract="true" ParentName="AddedBodyPartBase">
+        <hediffClass>PyrinthBionics.Hediff_PyrinthImplant</hediffClass>
+        <defaultLabelColor>(192,117,77)</defaultLabelColor>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.05</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef Name="PyrinthBionics_LimbHediffBase" ParentName="PyrinthBionics_HediffBase" Abstract="true">
+        <stages>
+            <li>
+                <statOffsets>
+                    <ComfyTemperatureMax>-5</ComfyTemperatureMax>
+                    <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

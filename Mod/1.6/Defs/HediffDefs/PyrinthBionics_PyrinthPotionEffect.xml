@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HediffDef>
+        <defName>PyrinthBionics_PyrinthPotionEffect</defName>
+        <label>pyrinth potion warmth</label>
+        <description>Pyrinth potion warms up blood, supercharging &lt;color=#C0754D&gt;Pyrinth Heat&lt;/color&gt; and staving off cold by decreasing compotable temeratures and slowly removing Hypothermia. Beware of overheating.</description>
+        <defaultLabelColor>(192,117,77)</defaultLabelColor>
+        <hediffClass>PyrinthBionics.Hediff_PyrinthPotionEffect</hediffClass>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ComfyTemperatureMax>-5</ComfyTemperatureMax>
+                    <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>2500</disappearsAfterTicks>
+            </li>
+            <li Class="PyrinthBionics.HediffCompProperties_PyrinthHeatBoost">
+                <heatPerSecondBonus>2</heatPerSecondBonus>
+            </li>
+            <li Class="PyrinthBionics.HediffCompProperties_PyrinthHypothermiaTreatment">
+                <severityReductionPerSecond>0.01</severityReductionPerSecond>
+            </li>
+        </comps>
+    </HediffDef>
+    
+</Defs>

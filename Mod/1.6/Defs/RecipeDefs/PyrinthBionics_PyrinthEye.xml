@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+        <defName>PyrinthBionics_InstallPyrinthEye</defName>
+        <label>install pyrinth eye</label>
+        <description>Replace an eye with a pyrinth implant that makes the wearer more beautiful and hypnotic.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PyrinthBionics_PyrinthEyeItem</ThingDef>
+            <HediffDef>PyrinthBionics_PyrinthEye</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing pyrinth eye.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PyrinthBionics_PyrinthEyeItem</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PyrinthBionics_PyrinthEyeItem</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Eye</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>PyrinthBionics_PyrinthEye</addsHediff>
+    </RecipeDef>
+
+</Defs>

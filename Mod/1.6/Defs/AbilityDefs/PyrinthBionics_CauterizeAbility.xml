@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <AbilityDef>
+    <defName>PyrinthBionics_CauterizeAbility</defName>
+    <label>cauterize bleeding wounds</label>
+    <description>Cauterize bleeding wounds, turning them into burn wounds.</description>
+    <iconPath>UI/Abilities/PyrinthBionics/CauterizeWounds</iconPath>
+    <stunTargetWhileCasting>true</stunTargetWhileCasting>
+    <cooldownTicksRange>60~60</cooldownTicksRange>
+    <targetRequired>true</targetRequired>
+    <aiCanUse>true</aiCanUse>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <label>cauterize bleeding wounds</label>
+      <violent>false</violent>
+      <drawAimPie>false</drawAimPie>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+      <range>-1</range>
+      <warmupTime>1</warmupTime>
+      <targetable>true</targetable>
+    </verbProperties>
+    <comps>
+      <li Class="PyrinthBionics.CompProperties_AbilityCauterizeWounds">
+        <heatCost>50</heatCost>
+        <heatStrokeSideEffect>0.20~0.40</heatStrokeSideEffect>
+      </li>
+      <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Manipulation</capacity>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>

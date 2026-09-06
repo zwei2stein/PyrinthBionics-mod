@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <ResearchProjectDef>
+        <defName>PyrinthBionics_Research</defName>
+        <label>Pyrinth bionics</label>
+        <description>Craft bionics powered by Pyrinth crystals and making Pyrinth bio-safe for ingestion and implant use.</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>DV_EpochsTab</tab>
+        <prerequisites>
+            <li MayRequire="zwei2stein.PyrinthStove">PyrinthStove_PyrinthTemperatureRegulationResearch</li>
+        </prerequisites>
+        <researchViewX>3.50</researchViewX>
+        <researchViewY>4.50</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>

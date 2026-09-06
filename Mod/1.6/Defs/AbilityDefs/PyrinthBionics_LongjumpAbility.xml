@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <AbilityDef>
+        <defName>PyrinthBionics_LongjumpAbility</defName>
+        <label>steam jump</label>
+        <description>Jump to target location.</description>
+        <iconPath>UI/Abilities/PyrinthBionics/SteamJump</iconPath>
+        <cooldownTicksRange>60~60</cooldownTicksRange>
+        <targetRequired>true</targetRequired>
+        <aiCanUse>true</aiCanUse>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <verbProperties>
+            <verbClass>PyrinthBionics.Verb_PyrinthJump</verbClass>
+            <label>pyrinth jump</label>
+            <violent>false</violent>
+            <hasStandardCommand>true</hasStandardCommand>
+            <onlyManualCast>True</onlyManualCast>
+            <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+            <warmupTime>0.5</warmupTime>
+            <range>19.9</range>
+            <warmupEffecter>JumpWarmupEffect</warmupEffecter>
+            <requireLineOfSight>true</requireLineOfSight>
+            <flightEffecterDef>JumpFlightEffect</flightEffecterDef>
+            <soundLanding>JumpPackLand</soundLanding>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="PyrinthBionics.CompProperties_AbilityImplantJump">
+                <heatCost>50</heatCost>
+            </li>
+            <li Class="CompProperties_AbilityRequiresCapacity">
+                <capacity>Manipulation</capacity>
+            </li>
+        </comps>
+    </AbilityDef>
+
+</Defs>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Adds the Epochs research tab only if no other mod loaded added it -->
+    
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchTabDef[defName="DV_EpochsTab"]</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+                <ResearchTabDef>
+                    <defName>DV_EpochsTab</defName>
+                    <label>Epochs</label>
+                    <generalTitle>Epochs research projects</generalTitle>
+                    <generalDescription>The tab for all manners of research projects for the Epochs mod series.</generalDescription>
+                </ResearchTabDef>
+            </value>
+        </nomatch>
+    </Operation>
+
+</Patch>
