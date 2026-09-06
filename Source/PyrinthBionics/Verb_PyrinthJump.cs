@@ -7,14 +7,17 @@ namespace PyrinthBionics
         protected override bool TryCastShot()
         {
             var heatComp = ability?.CompOfType<CompAbilityEffect_PyrinthHeatGated>();
-            if (heatComp == null)
-                return false;
+            if (heatComp == null) return false;
 
             var heat = PyrinthHeatUtility.GetTracker(CasterPawn);
-            if (heat == null || !heat.TryConsume(heatComp.HeatCost))
+            if (heat == null || !heat.CanConsume(heatComp.HeatCost))
                 return false;
 
-            return base.TryCastShot();
+            if (!base.TryCastShot())
+                return false;
+
+            heat.TryConsume(heatComp.HeatCost);
+            return true;
         }
     }
 }

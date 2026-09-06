@@ -41,12 +41,16 @@ namespace PyrinthBionics
             for (var i = 0; i < hediffs.Count; i++)
             {
                 var ext = hediffs[i].def.GetModExtension<PyrinthBionicsImplantExtension>();
-                if (ext == null)
-                    continue;
+                if (ext != null)
+                {
+                    count++;
+                    heatCapacity += ext.heatCapacity;
+                    heatPerSecond += ext.heatPerSecond;
+                }
 
-                count++;
-                heatCapacity += ext.heatCapacity;
-                heatPerSecond += ext.heatPerSecond;
+                var boost = hediffs[i].TryGetComp<HediffComp_PyrinthHeatBoost>();
+                if (boost != null)
+                    heatPerSecond += boost.HeatPerSecondBonus;
             }
 
             return new PyrinthImplantTotals(count, heatCapacity, heatPerSecond);

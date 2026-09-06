@@ -65,8 +65,6 @@ namespace PyrinthBionics
         private void Seduce(Pawn targetPawn)
         {
             
-            
-            
             var effectStrength = parent.pawn.GetStatValue(StatDefOf.NegotiationAbility);
             
             if (Props.enhancingTraits != null && targetPawn.story?.traits != null)
@@ -96,7 +94,7 @@ namespace PyrinthBionics
             // Prisoner effects.
             if (targetPawn.IsPrisoner)
             {
-                targetPawn.guest.resistance = Mathf.Max(
+                targetPawn.guest.resistance = Mathf.Clamp(
                     targetPawn.guest.resistance - Props.prisonerResistanceDecrease.RandomInRange * effectStrength,
                     0.0f,
                     1.0f);

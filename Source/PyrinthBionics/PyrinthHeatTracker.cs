@@ -72,23 +72,7 @@ namespace PyrinthBionics
                 Current = Max;
         }
 
-        public float GetEffectiveHeatPerSecond()
-        {
-            var result = HeatPerSecond;
+        public float GetEffectiveHeatPerSecond() => HeatPerSecond;
 
-            if (pawn?.health?.hediffSet == null)
-                return result;
-
-            foreach (var t in pawn.health.hediffSet.hediffs)
-            {
-                var comp = t.TryGetComp<HediffComp_PyrinthHeatBoost>();
-
-                if (comp != null)
-                    result += comp.HeatPerSecondBonus;
-            }
-
-            return result;
-        }
-        
     }
 }

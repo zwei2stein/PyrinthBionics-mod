@@ -17,7 +17,17 @@ Steam workshop link: <https://steamcommunity.com/sharedfiles/filedetails/?id=TOD
 
 [Steam blurb text is in this repo](/Publishing/steam.txt)
 
-![](/Publishing/tech.png)
+![](/Publishing/01_eye.png)
+
+![](/Publishing/02_arm.png)
+
+![](/Publishing/03_leg.png)
+
+![](/Publishing/04_liver.png)
+
+![](/Publishing/05_stomach.png)
+
+![](/Publishing/06_potion.png)
 
 ## License
 

@@ -10,6 +10,7 @@
         <targetRequired>true</targetRequired>
         <aiCanUse>true</aiCanUse>
         <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
         <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
         <verbProperties>
             <verbClass>PyrinthBionics.Verb_PyrinthJump</verbClass>

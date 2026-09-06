@@ -11,6 +11,7 @@
     <targetRequired>true</targetRequired>
     <aiCanUse>true</aiCanUse>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <jobDef>CastAbilityOnThingMelee</jobDef>
     <verbProperties>

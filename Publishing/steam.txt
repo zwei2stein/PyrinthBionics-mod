@@ -6,6 +6,8 @@ Add-on for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=333654463
 
 Pyrinth-based, fire-themed bionic implants with abilities and a new resource to power them.
 
+Beware: you're playing with fire! Pawns can easily get heatstroke, and stacking all implants may overheat them even below freezing.
+
 [h3]Implants[/h3]
 
 [list]
@@ -17,7 +19,6 @@ Pyrinth-based, fire-themed bionic implants with abilities and a new resource to 
 [/list]
 
 [img=https://i.imgur.com/N4myHz3.png]
-
 
 [h3]Extras[/h3]
 
@@ -37,7 +38,7 @@ Pyrinth-based, fire-themed bionic implants with abilities and a new resource to 
 
 [list]
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3336544632]Epochs - Pyrinth[/url] (duh, required dependency)
-    [*]Pyrinth Stove & Smithy - Integrates research into the research tree.
+    [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3740618688]Pyrinth Stove & Smithy[/url] - Integrates research into the research tree.
 [/list]
 
 [h3]Pyrinth Liver[/h3]
