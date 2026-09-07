@@ -29,6 +29,12 @@
             <displayPriority>460</displayPriority>
             <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
         </recipeMaker>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>2</glowRadius>
+                <glowColor>(192,117,77,0)</glowColor>
+            </li>
+        </comps>
     </PyrinthBionics.PyrinthItemDef>
 
 </Defs>
