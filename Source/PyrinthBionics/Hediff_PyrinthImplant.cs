@@ -19,7 +19,7 @@ namespace PyrinthBionics
                 return baseText +
                        "PyrinthBionics_Hediff_Tooltip".Translate(
                            Mathf.FloorToInt(ext.heatCapacity).Named("HEATCAPACITY"),
-                           ext.heatPerSecond.ToString("F1", CultureInfo.InvariantCulture).Named("HEATPS")
+                           ext.heatPerSecond.ToString("F2", CultureInfo.InvariantCulture).Named("HEATPS")
                        ).Resolve();
             }
         }
@@ -65,7 +65,7 @@ namespace PyrinthBionics
                 yield return new StatDrawEntry(
                     PyrinthBionicsDefOf.PyrinthBionics_StatCategory,
                     "PyrinthBionics_StatEntry_HeatPerSecondLabel".Translate(),
-                    "PyrinthBionics_Gizmo_Gauge_HeatPS_Label".Translate(heatProps.heatPerSecondBonus.ToString("F1").Named("HEATPS")),
+                    "PyrinthBionics_Gizmo_Gauge_HeatPS_Label".Translate(heatProps.heatPerSecondBonus.ToString("F2").Named("HEATPS")),
                     "PyrinthBionics_StatEntry_HeatPerSecondDesc".Translate(),
                     1000);
             }
@@ -95,7 +95,7 @@ namespace PyrinthBionics
                 return baseText +
                        "PyrinthBionics_Hediff_Tooltip".Translate(
                            0.Named("HEATCAPACITY"),
-                           heatProps.heatPerSecondBonus.ToString("F1", CultureInfo.InvariantCulture).Named("HEATPS")
+                           heatProps.heatPerSecondBonus.ToString("F2", CultureInfo.InvariantCulture).Named("HEATPS")
                        ).Resolve();
             }
         }

@@ -54,7 +54,7 @@ namespace PyrinthBionics
                         yield return new StatDrawEntry(
                             PyrinthBionicsDefOf.PyrinthBionics_StatCategory,
                             "PyrinthBionics_StatEntry_HeatPerSecondLabel".Translate(),
-                            "PyrinthBionics_Gizmo_Gauge_HeatPS_Label".Translate(heatProps.heatPerSecondBonus.ToString("F1").Named("HEATPS")),
+                            "PyrinthBionics_Gizmo_Gauge_HeatPS_Label".Translate(heatProps.heatPerSecondBonus.ToString("F2").Named("HEATPS")),
                             "PyrinthBionics_StatEntry_HeatPerSecondDesc".Translate(),
                             999);
                     }

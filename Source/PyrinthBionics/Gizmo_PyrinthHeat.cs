@@ -62,7 +62,7 @@ namespace PyrinthBionics
             Widgets.Label(
                 new Rect(rect.x + 4f, rect.y + 53f, rect.width - 8f, 16f),
                 "PyrinthBionics_Gizmo_Gauge_HeatPS_Label".Translate(
-                    tracker.GetEffectiveHeatPerSecond().ToString("F1", CultureInfo.InvariantCulture).Named("HEATPS")
+                    tracker.GetEffectiveHeatPerSecond().ToString("F2", CultureInfo.InvariantCulture).Named("HEATPS")
                 )
             );
 
@@ -80,7 +80,7 @@ namespace PyrinthBionics
                 Mathf.FloorToInt(tracker.Current).Named("ACTUALHEAT"),
                 Mathf.FloorToInt(tracker.Max).Named("MAXHEAT"),
                 tracker.ImplantCount.Named("IMPLANTCOUNT"),
-                tracker.GetEffectiveHeatPerSecond().ToString("F1", CultureInfo.InvariantCulture).Named("HEATPS")
+                tracker.GetEffectiveHeatPerSecond().ToString("F2", CultureInfo.InvariantCulture).Named("HEATPS")
             ).Resolve();
         }
     }
