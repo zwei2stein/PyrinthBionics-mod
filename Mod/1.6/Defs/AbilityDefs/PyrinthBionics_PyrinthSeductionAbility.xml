@@ -36,6 +36,7 @@
                 <heatStrokeSideEffect>0.20~0.40</heatStrokeSideEffect>
                 <prisonerResistanceDecrease>1~5</prisonerResistanceDecrease>
                 <prisonerWillDecrease MayRequire="Ludeon.RimWorld.Ideology">1~5</prisonerWillDecrease>
+                <prisonerIdeoCertaintyDecrease MayRequire="Ludeon.RimWorld.Ideology">0.05~0.10</prisonerIdeoCertaintyDecrease>
                 <slaveSuppressionIncrease MayRequire="Ludeon.RimWorld.Ideology">0.1~0.3</slaveSuppressionIncrease>
                 <enhancingTraits>
                     <li>Pyromaniac</li>

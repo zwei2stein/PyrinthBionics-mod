@@ -42,6 +42,8 @@
   
   <PyrinthBionics_PyrinthSeduction_MustHaveNegotiationAbility>{USER_nameDef} has no negotiation ability or has disabled Social.</PyrinthBionics_PyrinthSeduction_MustHaveNegotiationAbility>
   
+  <PyrinthBionics_PyrinthSeduction_ConversionAttempt_Converted>{PAWN_nameDef} fell under the crystalline-fiery spell of {INITIATOR_nameDef}, happily adopting {INITIATOR_possessive} worldview. {PAWN_nameDef} is now one of {IDEO}.</PyrinthBionics_PyrinthSeduction_ConversionAttempt_Converted>
+  
   <!-- Metalhorror -->
   
   <PyrinthBionics_PyrinthLiverPurge_Metalhorror>{INFECTED_nameDef}'s metalhorror emerged because they attempted to purge their body with the power of Pyrinth.</PyrinthBionics_PyrinthLiverPurge_Metalhorror>

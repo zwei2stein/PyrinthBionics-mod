@@ -11,6 +11,7 @@ namespace PyrinthBionics
         
         public IntRange prisonerResistanceDecrease = new IntRange(1, 5);
         public IntRange prisonerWillDecrease = new IntRange(1, 5);
+        public FloatRange prisonerIdeoCertaintyDecrease = new FloatRange(0.1f, 0.3f);
         public FloatRange slaveSuppressionIncrease = new FloatRange(0.1f, 0.3f);
         public List<TraitDef> enhancingTraits = new List<TraitDef>();
         public List<GeneDef> backfiringGenes = new List<GeneDef>();
@@ -89,8 +90,8 @@ namespace PyrinthBionics
                         break;
                     }
                 }
-            }
-
+            } 
+            
             // Prisoner effects.
             if (targetPawn.IsPrisoner)
             {
@@ -107,6 +108,11 @@ namespace PyrinthBionics
                         targetPawn.guest.will - Props.prisonerWillDecrease.RandomInRange * effectStrength,
                         0.0f,
                         1.0f);
+                }
+
+                if (ModLister.IdeologyInstalled)
+                {
+                    ApplyPrisonerIdeoConversion(targetPawn, effectStrength);
                 }
             }
 
@@ -148,6 +154,38 @@ namespace PyrinthBionics
                 targetPawn,
                 Props.slaveSuppressionIncrease.RandomInRange * effectStrength
             );
+        }
+        
+        private void ApplyPrisonerIdeoConversion(Pawn targetPawn, float effectStrength)
+        {
+            if (!targetPawn.guest.IsInteractionEnabled(PrisonerInteractionModeDefOf.Convert))
+                return;
+            
+            if (effectStrength <= 0f)
+                return;
+
+            if (targetPawn.Ideo == parent.pawn.Ideo)
+                return;
+
+            var certaintyReduction =  Props.prisonerIdeoCertaintyDecrease.RandomInRange * effectStrength;
+
+            var converted = targetPawn.ideo.IdeoConversionAttempt(
+                certaintyReduction,
+                parent.pawn.Ideo
+            );
+
+            if (converted)
+            {
+                Messages.Message(
+                    "PyrinthBionics_PyrinthSeduction_ConversionAttempt_Converted".Translate(
+                        targetPawn.Named("PAWN"),
+                        parent.pawn.Named("INITIATOR"),
+                        targetPawn.Ideo.MemberNamePlural.Named("IDEO")
+                    ),
+                    targetPawn,
+                    MessageTypeDefOf.PositiveEvent
+                );
+            }
         }
 
     }
