@@ -8,7 +8,6 @@
         <descriptionHyperlinks>
             <RecipeDef>PyrinthBionics_InstallPyrinthLiver</RecipeDef>
         </descriptionHyperlinks>
-        <linkedHediff>PyrinthBionics_PyrinthLiver</linkedHediff>
         <statBases>
             <MarketValue>1200</MarketValue>
             <Mass>2</Mass>

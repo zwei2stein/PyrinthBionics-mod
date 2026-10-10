@@ -8,4 +8,25 @@
         <displayAllByDefault>true</displayAllByDefault>
     </StatCategoryDef>
 
+    <StatDef>
+        <defName>PyrinthBionics_HeatCapacity</defName>
+        <label>pyrinth heat capacity</label>
+        <description>Maximum pyrinth heat this pawn's implants can store.</description>
+        <category>PyrinthBionics_StatCategory</category>
+        <defaultBaseValue>50</defaultBaseValue>
+        <minValue>0</minValue>
+        <toStringStyle>Integer</toStringStyle>
+        <workerClass>PyrinthBionics.StatWorker_PyrinthHeat</workerClass>
+    </StatDef>
+
+    <StatDef>
+        <defName>PyrinthBionics_HeatPerSecond</defName>
+        <label>pyrinth heat per second</label>
+        <description>Pyrinth heat generated per second by this pawn's implants.</description>
+        <category>PyrinthBionics_StatCategory</category>
+        <defaultBaseValue>0</defaultBaseValue>
+        <toStringStyle>FloatTwo</toStringStyle>
+        <workerClass>PyrinthBionics.StatWorker_PyrinthHeat</workerClass>
+    </StatDef>
+
 </Defs>

@@ -17,17 +17,13 @@
   <PyrinthBionics_AbilityHeatCostNotEnoughHeat>Needs &lt;color=#C0754D&gt;{COST} Pyrinth Heat&lt;/color&gt;. Current: {ACTUALHEAT}/{MAXHEAT}</PyrinthBionics_AbilityHeatCostNotEnoughHeat>
   
   <!-- stat blocks in item details -->
-  
+
   <PyrinthBionics_StatEntry_HeatCapacityLabel>Heat capacity</PyrinthBionics_StatEntry_HeatCapacityLabel>
   <PyrinthBionics_StatEntry_HeatCapacityDesc>Heat capacity added by this implant</PyrinthBionics_StatEntry_HeatCapacityDesc>
   
   <PyrinthBionics_StatEntry_HeatPerSecondLabel>Heat per second</PyrinthBionics_StatEntry_HeatPerSecondLabel>
   <PyrinthBionics_StatEntry_HeatPerSecondDesc>Heat regeneration added by this implant</PyrinthBionics_StatEntry_HeatPerSecondDesc>
   
-  <!-- hediff detail tooltip -->
-  
-  <PyrinthBionics_Hediff_Tooltip>\n\n&lt;color=#C0754D&gt;Pyrinth Heat&lt;/color&gt; capacity: +{HEATCAPACITY}\n&lt;color=#C0754D&gt;Pyrinth Heat&lt;/color&gt; per second: +{HEATPS}/s</PyrinthBionics_Hediff_Tooltip>
-
   <!-- potion -->
   
   <PyrinthBionics_StatEntry_RefillMaxLabel>Refill Pyrinth Heat</PyrinthBionics_StatEntry_RefillMaxLabel>

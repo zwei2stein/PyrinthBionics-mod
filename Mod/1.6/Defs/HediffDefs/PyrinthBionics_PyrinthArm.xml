@@ -29,12 +29,6 @@
         <abilities>
             <li>PyrinthBionics_CauterizeAbility</li>
         </abilities>
-        <modExtensions>
-            <li Class="PyrinthBionics.PyrinthBionicsImplantExtension">
-                <heatCapacity>10</heatCapacity>
-                <heatPerSecond>0.5</heatPerSecond>
-            </li>
-        </modExtensions>
     </HediffDef>
 
 </Defs>

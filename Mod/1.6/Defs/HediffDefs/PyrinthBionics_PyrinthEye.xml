@@ -20,6 +20,8 @@
                     <PawnBeauty>1</PawnBeauty>
                     <ComfyTemperatureMax>-3</ComfyTemperatureMax>
                     <ComfyTemperatureMin>-6</ComfyTemperatureMin>
+                    <PyrinthBionics_HeatCapacity>5</PyrinthBionics_HeatCapacity>
+                    <PyrinthBionics_HeatPerSecond>0.1</PyrinthBionics_HeatPerSecond>
                 </statOffsets>
                 <statFactors>
                     <SocialImpact>1.15</SocialImpact>
@@ -43,12 +45,6 @@
                 </drawData>
             </li>
         </renderNodeProperties>
-        <modExtensions>
-            <li Class="PyrinthBionics.PyrinthBionicsImplantExtension">
-                <heatCapacity>5</heatCapacity>
-                <heatPerSecond>0.1</heatPerSecond>
-            </li>
-        </modExtensions>
     </HediffDef>
 
 </Defs>

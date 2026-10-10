@@ -17,6 +17,8 @@
                 <statOffsets>
                     <ComfyTemperatureMax>-5</ComfyTemperatureMax>
                     <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+                    <PyrinthBionics_HeatCapacity>10</PyrinthBionics_HeatCapacity>
+                    <PyrinthBionics_HeatPerSecond>0.5</PyrinthBionics_HeatPerSecond>
                 </statOffsets>
             </li>
         </stages>

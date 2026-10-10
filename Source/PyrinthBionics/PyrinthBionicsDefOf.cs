@@ -13,6 +13,8 @@ namespace PyrinthBionics
         public static ThoughtDef PyrinthBionics_Seduction;
 
         public static StatCategoryDef PyrinthBionics_StatCategory;
+        public static StatDef PyrinthBionics_HeatCapacity;
+        public static StatDef PyrinthBionics_HeatPerSecond;
 
         static PyrinthBionicsDefOf()
         {

@@ -71,7 +71,6 @@
         <Compile Include="CompAbilityEffect_PyrinthHeatGated.cs"/>
         <Compile Include="Gizmo_PyrinthHeat.cs"/>
         <Compile Include="Harmony.cs" />
-        <Compile Include="HediffComp_PyrinthHeatBoost.cs" />
         <Compile Include="HediffComp_PyrinthHypothermiaTreatment.cs" />
         <Compile Include="Hediff_PyrinthHeat.cs"/>
         <Compile Include="Hediff_PyrinthImplant.cs"/>
@@ -82,6 +81,7 @@
         <Compile Include="PyrinthHeatTracker.cs"/>
         <Compile Include="PyrinthHeatUtility.cs"/>
         <Compile Include="PyrinthItemDef.cs" />
+        <Compile Include="StatWorker_PyrinthHeat.cs" />
         <Compile Include="ThermalSideEffectUtils.cs" />
         <Compile Include="ThoughtWorker_PyromaniacImplants.cs"/>
         <Compile Include="Verb_PyrinthJump.cs"/>

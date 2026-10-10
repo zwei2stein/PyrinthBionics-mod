@@ -11,7 +11,6 @@
         <thingSetMakerTags>
             <li>RewardStandardMidFreq</li>
         </thingSetMakerTags>
-        <linkedHediff>PyrinthBionics_PyrinthEye</linkedHediff>
         <statBases>
             <MarketValue>600</MarketValue>
             <Mass>0.3</Mass>

@@ -47,7 +47,6 @@ namespace PyrinthBionics
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 tracker.SetPawn(pawn);
-                tracker.Recalculate();
             }
         }
     }

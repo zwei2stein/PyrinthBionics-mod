@@ -25,14 +25,14 @@
                 </makeImmuneTo>
                 <hungerRateFactor>0.9</hungerRateFactor>
                 <foodPoisoningChanceFactor>0.1</foodPoisoningChanceFactor>
+                <statOffsets>
+                    <ComfyTemperatureMax>-3</ComfyTemperatureMax>
+                    <ComfyTemperatureMin>-6</ComfyTemperatureMin>
+                    <PyrinthBionics_HeatCapacity>5</PyrinthBionics_HeatCapacity>
+                    <PyrinthBionics_HeatPerSecond>0.1</PyrinthBionics_HeatPerSecond>
+                </statOffsets>
             </li>
         </stages>
-        <modExtensions>
-            <li Class="PyrinthBionics.PyrinthBionicsImplantExtension">
-                <heatCapacity>5</heatCapacity>
-                <heatPerSecond>0.1</heatPerSecond>
-            </li>
-        </modExtensions>
     </HediffDef>
 
 </Defs>

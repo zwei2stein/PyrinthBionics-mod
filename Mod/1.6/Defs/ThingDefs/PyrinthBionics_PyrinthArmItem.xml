@@ -8,7 +8,6 @@
         <descriptionHyperlinks>
             <RecipeDef>PyrinthBionics_InstallPyrinthArm</RecipeDef>
         </descriptionHyperlinks>
-        <linkedHediff>PyrinthBionics_PyrinthArm</linkedHediff>
         <thingSetMakerTags>
             <li>RewardStandardMidFreq</li>
         </thingSetMakerTags>

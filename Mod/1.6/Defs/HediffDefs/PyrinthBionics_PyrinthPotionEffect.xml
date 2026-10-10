@@ -12,15 +12,14 @@
                 <statOffsets>
                     <ComfyTemperatureMax>-5</ComfyTemperatureMax>
                     <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+                    <PyrinthBionics_HeatPerSecond>2</PyrinthBionics_HeatPerSecond>
+                    <PyrinthBionics_HeatCapacity>10</PyrinthBionics_HeatCapacity>
                 </statOffsets>
             </li>
         </stages>
         <comps>
             <li Class="HediffCompProperties_Disappears">
                 <disappearsAfterTicks>2500</disappearsAfterTicks>
-            </li>
-            <li Class="PyrinthBionics.HediffCompProperties_PyrinthHeatBoost">
-                <heatPerSecondBonus>2</heatPerSecondBonus>
             </li>
             <li Class="PyrinthBionics.HediffCompProperties_PyrinthHypothermiaTreatment">
                 <severityReductionPerSecond>0.01</severityReductionPerSecond>

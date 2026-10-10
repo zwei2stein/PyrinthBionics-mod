@@ -1,12 +1,10 @@
-using System.Collections.Generic;
+using RimWorld;
 using Verse;
 
 namespace PyrinthBionics
 {
     public class PyrinthHeatTracker : IExposable
     {
-        public const float BaseCapacity = 50f;
-
         public float Current;
 
         private Pawn pawn;
@@ -14,12 +12,11 @@ namespace PyrinthBionics
         public PyrinthHeatTracker(Pawn pawn)
         {
             this.pawn = pawn;
-            Recalculate();
         }
-        
-        public int ImplantCount { get; private set; }
-        public float Max { get; private set; }
-        public float HeatPerSecond { get; private set; }
+
+        public int ImplantCount => PyrinthBionicsUtility.CountImplants(pawn);
+        public float Max => pawn?.GetStatValue(PyrinthBionicsDefOf.PyrinthBionics_HeatCapacity) ?? 0f;
+        public float HeatPerSecond => pawn?.GetStatValue(PyrinthBionicsDefOf.PyrinthBionics_HeatPerSecond) ?? 0f;
 
         public float Percent => Max > 0f ? Current / Max : 0f;
 
@@ -27,18 +24,10 @@ namespace PyrinthBionics
         {
             Scribe_Values.Look(ref Current, "current");
         }
-        
+
         public void SetPawn(Pawn newPawn)
         {
             pawn = newPawn;
-        }
-        
-        public void Recalculate()
-        {
-            var totals = PyrinthBionicsUtility.GetImplantTotals(pawn);
-            ImplantCount = totals.Count;
-            Max = BaseCapacity + totals.HeatCapacity;
-            HeatPerSecond = totals.HeatPerSecond;
         }
 
         public bool CanConsume(float amount)
@@ -57,8 +46,10 @@ namespace PyrinthBionics
 
         public void Tick()
         {
-            if (Current > Max)
-                Current = Max;
+            var max = Max;
+
+            if (Current > max)
+                Current = max;
 
             if (ImplantCount <= 0)
             {
@@ -66,13 +57,12 @@ namespace PyrinthBionics
                 return;
             }
 
-            Current += GetEffectiveHeatPerSecond() / GenTicks.TicksPerRealSecond;
+            Current += HeatPerSecond / GenTicks.TicksPerRealSecond;
 
-            if (Current > Max)
-                Current = Max;
+            if (Current > max)
+                Current = max;
         }
 
         public float GetEffectiveHeatPerSecond() => HeatPerSecond;
-
     }
 }
