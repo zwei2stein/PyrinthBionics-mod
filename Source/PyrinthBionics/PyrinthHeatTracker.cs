@@ -48,10 +48,7 @@ namespace PyrinthBionics
         {
             var max = Max;
 
-            if (Current > max)
-                Current = max;
-
-            if (ImplantCount <= 0)
+            if (max <= 0f)
             {
                 Current = 0f;
                 return;
