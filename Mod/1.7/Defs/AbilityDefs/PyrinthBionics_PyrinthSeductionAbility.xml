@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <AbilityDef>
+        <defName>PyrinthBionics_PyrinthSeductionAbility</defName>
+        <label>pyrinth seduction</label>
+        <description>Hypnotizes the target, making them fall for the caster and devour their words. Reduces prisoner resistance and will. Increases slave suppression. Slightly increases the pawn's opinion.\n\nHas a much greater effect on pyromaniacs, but can backfire on pyrophobic pawns.</description>
+        <iconPath>UI/Abilities/PyrinthBionics/PyrinthSeduction</iconPath>
+        <stunTargetWhileCasting>true</stunTargetWhileCasting>
+        <cooldownTicksRange>60000~60000</cooldownTicksRange>
+        <targetRequired>true</targetRequired>
+        <aiCanUse>true</aiCanUse>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+        <verbProperties>
+            <verbClass>Verb_CastAbilityTouch</verbClass>
+            <label>pyrinth seduction</label>
+            <violent>false</violent>
+            <drawAimPie>false</drawAimPie>
+            <targetParams>
+                <canTargetSelf>false</canTargetSelf>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetHumans>true</canTargetHumans>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetMechs>false</canTargetMechs>
+            </targetParams>
+            <range>-1</range>
+            <warmupTime>1</warmupTime>
+            <targetable>true</targetable>
+        </verbProperties>
+        <comps>
+            <li Class="PyrinthBionics.CompProperties_AbilityPyrinthSeduction">
+                <heatCost>50</heatCost>
+                <heatStrokeSideEffect>0.20~0.40</heatStrokeSideEffect>
+                <prisonerResistanceDecrease>1~5</prisonerResistanceDecrease>
+                <prisonerWillDecrease MayRequire="Ludeon.RimWorld.Ideology">1~5</prisonerWillDecrease>
+                <prisonerIdeoCertaintyDecrease MayRequire="Ludeon.RimWorld.Ideology">0.05~0.10</prisonerIdeoCertaintyDecrease>
+                <slaveSuppressionIncrease MayRequire="Ludeon.RimWorld.Ideology">0.1~0.3</slaveSuppressionIncrease>
+                <enhancingTraits>
+                    <li>Pyromaniac</li>
+                </enhancingTraits>
+                <backfiringGenes MayRequire="Ludeon.RimWorld.Biotech">
+                    <li>FireTerror</li> <!-- Pyrophobia -->
+                </backfiringGenes>
+            </li>
+            <li Class="CompProperties_AbilityRequiresCapacity">
+                <capacity>Talking</capacity>
+            </li>
+        </comps>
+    </AbilityDef>
+
+</Defs>

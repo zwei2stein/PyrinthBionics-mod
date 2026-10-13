@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef>
+        <defName>PyrinthBionics_MakePyrinthPotion</defName>
+        <label>brew pyrinth potion</label>
+        <jobString>Brewing a Pyrinth potion.</jobString>
+
+        <workAmount>3000</workAmount>
+        <workSkill>Crafting</workSkill>
+        <workSkillLearnFactor>0.5</workSkillLearnFactor>
+        <effectWorking>Cook</effectWorking>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DV_Pyrinth</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Neutroamine</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+
+        <products>
+            <PyrinthBionics_PyrinthPotion>1</PyrinthBionics_PyrinthPotion>
+        </products>
+
+        <skillRequirements>
+            <Crafting>3</Crafting>
+        </skillRequirements>
+
+        <recipeUsers>
+            <li>DrugLab</li>
+        </recipeUsers>
+
+        <researchPrerequisites>
+            <li>DrugProduction</li>
+            <li>PyrinthBionics_Research</li>
+        </researchPrerequisites>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>PyrinthBionics_MakePyrinthPotion_Bulk</defName>
+        <label>brew pyrinth potions x4</label>
+        <jobString>Brewing bulk Pyrinth potions.</jobString>
+
+        <workAmount>12000</workAmount>
+        <workSkill>Crafting</workSkill>
+        <workSkillLearnFactor>0.5</workSkillLearnFactor>
+        <effectWorking>Cook</effectWorking>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs><li>DV_Pyrinth</li></thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs><li>Neutroamine</li></thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+        </ingredients>
+
+        <products>
+            <PyrinthBionics_PyrinthPotion>5</PyrinthBionics_PyrinthPotion>
+        </products>
+
+        <skillRequirements>
+            <Crafting>3</Crafting>
+        </skillRequirements>
+
+        <recipeUsers>
+            <li>DrugLab</li>
+        </recipeUsers>
+
+        <researchPrerequisites>
+            <li>DrugProduction</li>
+            <li>PyrinthBionics_Research</li>
+        </researchPrerequisites>
+    </RecipeDef>
+
+</Defs>

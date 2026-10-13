@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThoughtDef>
+        <defName>PyrinthBionics_PyromaniacImplants</defName>
+        <workerClass>PyrinthBionics.ThoughtWorker_PyromaniacImplants</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>pyrinth augmented pyromaniac</label>
+                <description>I am now part fire. Pyrinth is my blood. Reassuring warmth makes me happy.</description>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>pyrinth augmented pyromaniac (x2)</label>
+                <description>I am now part fire. Pyrinth is my blood. Reassuring warmth makes me happy.</description>
+                <baseMoodEffect>4</baseMoodEffect>
+            </li>
+            <li>
+                <label>pyrinth augmented pyromaniac (x3)</label>
+                <description>I am now part fire. Pyrinth is my blood. Reassuring warmth makes me happy.</description>
+                <baseMoodEffect>6</baseMoodEffect>
+            </li>
+            <li>
+                <label>pyrinth augmented pyromaniac (x4)</label>
+                <description>I am now part fire. Pyrinth is my blood. Reassuring warmth makes me happy.</description>
+                <baseMoodEffect>8</baseMoodEffect>
+            </li>
+            <li>
+                <label>pyrinth augmented pyromaniac (x5)</label>
+                <description>I am now part fire. Pyrinth is my blood. Reassuring warmth makes me happy.</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+            <li>
+                <label>pyrinth augmented pyromaniac (x6)</label>
+                <description>I am now part fire. Pyrinth is my blood. Reassuring warmth makes me happy.</description>
+                <baseMoodEffect>12</baseMoodEffect>
+            </li>
+            <li>
+                <label>pyrinth augmented pyromaniac (x7)</label>
+                <description>I am now a fire. Pyrinth is my blood. Heat makes me ecstatic.</description>
+                <baseMoodEffect>14</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>
